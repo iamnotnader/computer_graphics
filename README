@@ -6,31 +6,37 @@ I took it my freshman Spring so this code is a little old. See here for all
 the assignment specs:
 http://www.cs.princeton.edu/courses/archive/spr12/cos426/assignments.html
 
+
 Assignment 0:
  - Simple web page
    http://cdn.rawgit.com/iamnotnader/computer_graphics_suite/master/nbal_cos426_assignment0/writeup.html
+ 
   
 Assignment 1:
  - Full image processing toolkit with everything from Gaussian blur to morphing.
    I morph the professor into Homer Simpson.
    http://cdn.rawgit.com//iamnotnader/computer_graphics_suite/master/nbal_cos426_assignment1/writeup.html
 
+
 Assignment 2:
  - Full mesh processing toolkit with everything from bilateral smoothing to
    Catmull-Clark subdivision.
    http://cdn.rawgit.com/iamnotnader/computer_graphics_suite/master/nbal_cos426_assignment2%202/writeup.html
+
 
 Assignment 3:
  - Fully-functional ray-tracer with support for all kinds of simple shapes and
    meshes, and some fairly sophisticated features.
    http://cdn.rawgit.com/iamnotnader/computer_graphics_suite/master/nbal_cos426_assignment3/writeup2.html
 
+
 Assignment 4:
  - A particle system with features like flocking.
    http://cdn.rawgit.com/iamnotnader/computer_graphics_suite/master/nbal_cos426_assignment4/writeup.html
-  
+ 
+ 
 Final project:
  - A fully-functional video game like Starfox that allows for networked multiplayer.
-   
+   http://cdn.rawgit.com/iamnotnader/computer_graphics/master/FINAL_PROJECT/trunk/writeup.html
 
 
