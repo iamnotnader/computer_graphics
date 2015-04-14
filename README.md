@@ -31,13 +31,12 @@ Assignment 3:
    meshes, and some fairly sophisticated features.
    [Full web page](http://cdn.rawgit.com/iamnotnader/computer_graphics/master/nbal_cos426_assignment3/writeup2.html)
 
-   ![alt text](http://cdn.rawgit.com/iamnotnader/computer_graphics/master/nbal_cos426_assignment2%202/output/loop3.jpg)
-
 
 Assignment 4:
- - A particle system with features like flocking.
-
-   [Full web page](http://cdn.rawgit.com/iamnotnader/computer_graphics/master/nbal_cos426_assignment4/writeup.html)
+ - A particle system with features like flocking. [Full web page](http://cdn.rawgit.com/iamnotnader/computer_graphics/master/nbal_cos426_assignment4/writeup.html)
+ 
+   ![alt text](http://cdn.rawgit.com/iamnotnader/computer_graphics/master/nbal_cos426_assignment4/output/cloth.gif)
+   ![alt text](http://cdn.rawgit.com/iamnotnader/computer_graphics/master/nbal_cos426_assignment4/output/flocking.gif)
  
  
 Final project:
