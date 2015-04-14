@@ -9,7 +9,7 @@ http://www.cs.princeton.edu/courses/archive/spr12/cos426/assignments.html
 
 Assignment 0:
  - Simple web page
-   http://cdn.rawgit.com/iamnotnader/computer_graphics/master/nbal_cos426_assignment0/writeup.html
+   [Full web page](http://cdn.rawgit.com/iamnotnader/computer_graphics/master/nbal_cos426_assignment0/writeup.html)
  
   
 Assignment 1:
