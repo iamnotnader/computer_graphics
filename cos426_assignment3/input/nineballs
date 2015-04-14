@@ -1,0 +1,26 @@
+# Abu Saporov, 2009
+
+# Camera
+camera 10.0 10.0 8.0     -0.6156 -0.6156 -0.4923    0.0 0.0 1.0   0.5  0.0407607 407.607
+
+# Light
+dir_light 1 1 1   0 0 -1
+
+# Materials
+material 0.2 0.3 0.2  0.5 0.7 0.5  0.8 0.8 0.8   0 0 0      0 0 0  5 0 0
+material 0.2 0.2 0.2  0.7 0.5 0.3  .9 .9 .9      0 0 0      0 0 0  10 0 0
+material 0.2 0.2 0.2  0.5 0.5 0.5  0.5 0.5 0.5  0.65 0.65 0.65  0.1 0.1 0.1    10 1.8 0
+
+# Spheres
+sphere   2   -2 -2 0  1
+sphere   0    0 -2 0  1
+sphere   2    2 -2 0  1
+sphere   0   -2  0 0  1
+sphere   2    0  0 0  1
+sphere   0    2  0 0  1
+sphere   2   -2  2 0  1
+sphere   0    0  2 0  1
+sphere   2    2  2 0  1
+
+# Base
+box   1  -20 -20 -3            +20 +20 -2

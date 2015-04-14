@@ -1,0 +1,72 @@
+# Sean Stern, 2009
+
+material 0.5 0.5 0.5  1   1   1       0   0   0    0 0 0  0 0 0  10 0 0
+material 0.0 0.0 0.0  0   0   0       0.3 0.3 0.3  0 0 0  0 0 0  10 0 0
+material 0.5 0.25 0.0  1   0.5 0       0   0   0    0 0 0  0 0 0  10 0 0
+material 0.07 0.07 0.07  0.14 0.14 0.14  0.6 0.6 0.6  0 0 0  0 0 0  10 0 0
+material .5 0 1  0.5  0.25 0     0   0   0    0 0 0  0 0 0  10 0 0
+
+
+# A camera
+camera 0.152229 0.857863 -4.43986  -0.0343431 -0.0714816 0.996851  0.512294 0.855171 0.0789715  0.5  0.01 100 
+ambient   1 1 1
+dir_light  0.8 0.8 0.8        -3 -4 -5
+ 
+
+#cylinder 
+ #   mat_id 
+  #  center_x center_y center_z 
+   # radius height
+
+box 4 -20 -20 5 20 20 5
+
+cylinder 
+    1
+    0 -1.5 0
+    .2 .1
+
+cylinder 
+    1
+    0 -1 0
+    .17 1
+
+cylinder 
+    1
+    0 -.5 0
+    .2 .1
+
+begin 2
+1 0 0 0
+0 1 0 0
+0 0 1 0
+0 0 0 1
+
+cylinder 
+    -1
+    0 0 0
+    .1 1
+
+cylinder 
+    -1
+    0 1 0
+    .08 1
+
+cylinder 
+    -1
+    0 2 0
+    .05 1
+end
+
+begin 0
+1 0 0 0
+0 1 0 0
+0 0 1 0
+0 0 0 1
+
+sphere -1 0 2.5 0 .1
+
+particle_source 
+  1 0 0 0 1 0
+  100 1 0
+  sphere 0 2.5 0 .01
+end

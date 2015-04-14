@@ -1,0 +1,105 @@
+material
+ 1 1 1
+ 0.5 0.5 0.5
+ 0.5 0.5 0.5	
+ 0 0 0
+ 0 0 0 
+ 0 1 ../GlutTest/images/grass.bmp
+
+box
+ 0
+ -50 0 -1
+ 50 150 1
+
+begin
+ -1
+ 1 0 0 0
+ 0 1 0 10
+ 0 0 1 1
+ 0 0 0 1
+ include T-building.scn
+end
+
+begin
+  -1
+  1 0 0 -15 
+  0 1 0 30
+  0 0 1 1
+  0 0 0 1
+  include T-building.scn
+end
+
+begin
+  -1
+  1 0 0 25 
+  0 1 0 20
+  0 0 1 1
+  0 0 0 1
+  include T-building.scn
+end
+
+begin
+  -1
+  1 0 0 7 
+  0 1 0 35
+  0 0 1 1
+  0 0 0 1
+  include N-building.scn
+end
+
+begin
+ -1
+ 1 0 0 -15
+ 0 1 0 40 
+ 0 0 1 1
+ 0 0 0 1
+ include N-building.scn
+end
+
+begin
+ -1
+ 1 0 0 -10
+ 0 1 0 50
+ 0 0 1 0 
+ 0 0 0 1
+ include building.scn
+end
+
+begin
+ -1
+ 1 0 0 -5
+ 0 1 0 50
+ 0 0 1 0 
+ 0 0 0 1
+ include building.scn
+end
+
+begin -1
+ .05 0 0 0
+ 0 .05 0 8
+ 0 0 .05 23
+ 0 0 0 1
+  enemy 0 -1 turret.off
+ 0 0 0
+ 10 .1 7
+end
+
+begin -1
+ .05 0 0 25
+ 0 .05 0 18
+ 0 0 .05 23
+ 0 0 0 1
+  enemy 0 -1 turret.off
+ 0 0 0
+ 10 .1 7
+end
+
+begin -1
+ .05 0 0 -15
+ 0 .05 0 27
+ 0 0 .05 23
+ 0 0 0 1
+  enemy 0 -1 turret.off
+ 0 0 0
+ 10 .1 7
+end

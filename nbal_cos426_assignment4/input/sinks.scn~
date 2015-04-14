@@ -1,0 +1,39 @@
+camera 20.7116 10.2365 25.5554  -0.660059 -0.315519 -0.68174  -0.261059 0.947299 -0.185667  0.25  0.01 1000
+
+
+
+particle_source 
+  1 0 0 0 5 -1
+  100 1 0
+  box  -4 1 1  -2 3 3
+
+
+material
+        0 0 0
+        1 0 0
+        0 0 0
+        0 0 0
+        0 0 0
+        1 1 0
+
+# ground plane
+
+#sphere 0 1 0 0 1
+
+particle_sink 
+  10 1E-6 0 1
+  box  -4 -1 -1  -2 1 1
+
+particle_sink 
+  0 1E-6 0 1
+  mesh  ico.off
+
+
+particle_sink 
+  0 1E-6 0 1
+  sphere  5 0 0  1
+  
+particle_sink 
+  0 1E-6 0 1
+  line  -4 -3 0  4 -3 0
+

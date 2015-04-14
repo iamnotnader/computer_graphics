@@ -1,0 +1,32 @@
+camera 0 -25 10  0 15 -1  0 1 0  0.5 0.1 100
+
+begin -1
+  1 0 0 0
+  0 0 -1 -18
+  0 1 0 9
+  0 0 0 1
+  arwing -1 Arwing_001.off
+end
+
+
+#point_light 1 1 1 0 50 20 0 0 0
+
+ambient 1 1 1
+include first_ocean.scn
+
+begin -1
+  1 0 0 0
+  0 1 0 260
+  0 0 1 0
+  0 0 0 1
+  include canyon.scn
+end
+
+
+begin -1
+ 1 0 0 0 
+ 0 1 0 410
+ 0 0 1 0 
+ 0 0 0 1
+ include Corneria_City_2.scn
+end

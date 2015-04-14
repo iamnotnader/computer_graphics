@@ -1,0 +1,46 @@
+material
+ 1 1 1
+ 0.5 0.5 0.5
+ 0.5 0.5 0.5	
+ 0 0 0
+ 0 0 0 
+ 0 1 ../GlutTest/images/water.bmp
+
+material
+ 1 1 1
+ 0.5 0.5 0.5
+ 0.5 0.5 0.5	
+ 0 0 0
+ 0 0 0 
+ 0 1 ../GlutTest/images/stone.bmp
+
+#floor
+box
+ 0
+ -100 -10 -1
+ 100 250 1
+
+#left
+box
+ 1
+ -101 -10 0
+ -100 250 50
+
+#right
+box
+ 1
+ 100 -10 0
+ 101 250 50
+
+#front
+box
+ 1
+ -100 250 1
+ -10 251 50
+
+box
+ 1
+ 10 250 1
+ 100 251 50
+
+#enemies

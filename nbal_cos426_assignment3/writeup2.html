@@ -1,0 +1,573 @@
+<HTML>
+<HEAD>
+<TITLE>
+COS 426 Assignment 3
+</TITLE>
+<BODY>
+<CENTER>
+<H2>
+COS 426, Spring 2011<BR>
+Nader Al-Naji, nbal<BR>           <!-- Fill in your name and login -->
+</H2>                     
+</CENTER>
+<HR><BR>
+
+
+<!------------------------------------------------------------------------> 
+<!------------------------------------------------------------------------> 
+<H2>List of Implemented Features</H2>
+<!------------------------------------------------------------------------> 
+<!------------------------------------------------------------------------> 
+
+I believe that I have implemented the following features, which are worth a total of 25 points:
+<H3> Basic Ray Generation </H3>
+<UL>
+  <LI>(1) Generate at ray for each pixel</LI>
+</UL>
+<H3> Ray-Primitive Intersection </H3>
+<UL>
+  <LI>(1) <A href="#primitive">Intersect a ray with a sphere</A></LI>
+  <LI>(1) <A href="#primitive">Intersect a ray with an axis-aligned box</A></LI>
+  <LI>(2) <A href="#primitive">Intersect a ray with a polygonal mesh</A></LI>
+  <LI>(1) <A href="#primitive">Intersect a ray with an n-sided polygonal mesh</A></LI>
+  <LI>(2) <A href="#primitive">Intersect a ray with an axis-aligned cylinder</A></LI>
+  <LI>(2) <A href="#primitive">Intersect a ray with an axis-aligned cone</A></LI>
+</UL>
+<H3> Ray-Scene Intersection </H3>
+<UL>
+  <LI>(1) <A href="#scene">Intersect a ray with a scene</A></LI>
+  <LI>(1) <A href="#transformations">Handle scene traversals with modeling transformations</A></LI>
+  <LI>(1) <A href="#accelerate">Accelerate ray-scene intersections with bounding box checks</A></LI>
+  <LI>(1) <A href="#accelerate">Accelerate ray-scene intersections by visiting nodes front to back</A></LI>
+</UL>
+<H3> Illumination </H3>
+<UL>
+  <LI>(2) <A href="#illumination">Phong illumination</A></LI>
+</UL>
+<H3> Shadows </H3>
+<UL>
+  <LI>(1) <A href="#shadow">Shadow rays</A></LI>
+</UL>
+<H3> Global Illumination </H3>
+<UL>
+  <LI>(2) <A href="#specular">Specular reflection</A></LI>
+  <LI>(1) <A href="#transmission">Transmission</A></LI>
+  <LI>(2) <A href="#refraction">Refraction</A></LI>
+</UL>
+<H3> Input </H3>
+<UL>
+  <LI>(1) <A href="#art">Make an interesting scene</A></LI>
+  <LI>(1) <A href="#art">Movie</A></LI>
+</UL>
+<H3> Art contest </H3>
+<UL>
+  <LI>(1) <A href="#art">Art contest submission</A></LI>
+</UL>
+<HR><BR>
+
+
+
+
+<!------------------------------------------------------------------------> 
+<!------------------------------------------------------------------------> 
+<H2>Demonstration of Implemented Features</H2>
+<!------------------------------------------------------------------------> 
+<!------------------------------------------------------------------------> 
+
+<!------------------------------------------------------------------------> 
+
+<H3><A name='primitive'>Ray-Primitive intersection</A></H3>
+<TABLE cellSpacing=0 cellPadding=10 border=0>
+<TBODY>
+  <TR>
+    <TD vAlign=top align=middle>
+       <A href="output/sphere.jpg"><IMG width=256 src="output/sphere.jpg"></A><BR>       
+       <A href="input/sphere.scn">sphere.scn</A>
+    </TD>
+    <TD vAlign=top align=middle>
+       <A href="output/tri.jpg"><IMG width=256 src="output/tri.jpg"></A><BR>       
+       <A href="input/tri.scn">tri.scn</A>
+    </TD>
+  </TR>
+  <TR>
+    <TD vAlign=top align=middle>
+       <A href="output/quadmesh.jpg"><IMG width=256 src="output/quadmesh.jpg"></A><BR>       
+       <A href="input/quadmesh.scn">quadmesh.scn</A>
+    </TD>
+  </TR>
+
+  <TR>
+    <TD vAlign=top align=middle>
+       <A href="output/ico.jpg"><IMG width=256 src="output/ico.jpg"></A><BR>       
+       <A href="input/ico.scn">ico.scn</A>
+    </TD>
+    <TD vAlign=top align=middle>
+       <A href="output/teapot.jpg"><IMG width=256 src="output/teapot.jpg"></A><BR>       
+       <A href="input/teapot.scn">teapot.scn</A>
+    </TD>
+  </TR>
+  <TR>
+    <TD vAlign=top align=middle>
+       <A href="output/box1.jpg"><IMG width=256 src="output/box1.jpg"></A><BR>       
+       <A href="input/box1.scn">box1.scn</A>
+    </TD>
+    <TD vAlign=top align=middle>
+       <A href="output/box2.jpg"><IMG width=256 src="output/box2.jpg"></A><BR>       
+       <A href="input/box2.scn">box2.scn</A>
+    </TD>
+  </TR>
+  <TR>
+    <TD vAlign=top align=middle>
+       <A href="output/cylinder1.jpg"><IMG width=256 src="output/cylinder1.jpg"></A><BR>       
+       <A href="input/cylinder1.scn">cylinder1.scn</A>
+    </TD>
+    <TD vAlign=top align=middle>
+       <A href="output/cylinder2.jpg"><IMG width=256 src="output/cylinder2.jpg"></A><BR>       
+       <A href="input/cylinder2.scn">cylinder2.scn</A>
+    </TD>
+  </TR>
+  <TR>
+    <TD vAlign=top align=middle>
+       <A href="output/cone1.jpg"><IMG width=256 src="output/cone1.jpg"></A><BR>       
+       <A href="input/cone1.scn">cone1.scn</A>
+    </TD>
+    <TD vAlign=top align=middle>
+       <A href="output/cone2.jpg"><IMG width=256 src="output/cone2.jpg"></A><BR>       
+       <A href="input/cone2.scn">cone2.scn</A>
+    </TD>
+  </TR>
+  <TR>
+    <TD vAlign=top align=middle colspan="3">
+      Ray-mesh intersection works with all kinds of meshes, not just triangle <BR>
+		meshes, which is worth an extra point (see Piazzza). Cone and cylinder <BR>
+		I just did some math to figure out the intersection t values. Sphere, mesh <BR>
+		and box intersections are a little sneakier if you care to look at the code. <BR>
+		Oh, one more thing: some sample scene files I found specify boxes with their z <BR>
+		components reversed, eg (1 1 -1) (1 1 1). This is an error on behalf <BR>
+		of the person who wrote the scene (It's not specified anywhere that we have to <BR>
+		handle this.) so be aware that if a box renders improperly, reversing the z <BR>
+		components to their proper order WILL fix it. This modification had to be made <BR>
+		for the green box in mixedprimitives.
+    </TD>
+  </TR>
+</TBODY>
+</TABLE>
+<HR><BR>
+
+
+<!------------------------------------------------------------------------> 
+
+<H3><A name='scene'>Ray-Scene intersection</A></H3>
+<TABLE cellSpacing=0 cellPadding=10 border=0>
+<TBODY>
+  <TR>
+    <TD vAlign=top align=middle>
+       <A href="output/fourspheres.jpg"><IMG width=256 src="output/fourspheres.jpg"></A><BR>       
+       <A href="input/fourspheres.scn">fourspheres.scn</A>
+    </TD>
+    <TD vAlign=top align=middle>
+       <A href="output/sixtriangles.jpg"><IMG width=256 src="output/sixtriangles.jpg"></A><BR>       
+       <A href="input/sixtriangles.scn">sixtriangles.scn</A>
+    </TD>
+  </TR>
+  <TR>
+    <TD vAlign=top align=middle>
+       <A href="output/mixedprimitives1.jpg"><IMG width=256 src="output/mixedprimitives1.jpg"></A><BR>       
+       <A href="input/mixedprimitives1.scn">mixedprimitives1.scn</A>
+    </TD>
+    <TD vAlign=top align=middle>
+       <A href="output/mixedprimitives2.jpg"><IMG width=256 src="output/mixedprimitives2.jpg"></A><BR>       
+       <A href="input/mixedprimitives2.scn">mixedprimitives2.scn</A>
+    </TD>
+  </TR>
+  <TR>
+    <TD vAlign=top align=middle colspan="3">
+      This part of the assignment seemed very straightforward. A simple depth <BR>
+		first search into the scene graph to render objects, augmented with bbox <BR>
+		checks was used.
+    </TD>
+  </TR>
+</TBODY>
+</TABLE>
+<HR><BR>
+
+
+<!------------------------------------------------------------------------> 
+
+<H3><A name='illumination'>Phong Illumination</A></H3>
+<TABLE cellSpacing=0 cellPadding=10 border=0>
+<TBODY>
+  <TR>
+    <TD vAlign=top align=middle>
+       <A href="output/diffuse.jpg"><IMG width=256 src="output/diffuse.jpg"></A><BR>       
+       <A href="input/diffuse.scn">diffuse.scn</A>
+    </TD>
+    <TD vAlign=top align=middle>
+       <A href="output/specular.jpg"><IMG width=256 src="output/specular.jpg"></A><BR>       
+       <A href="input/specular.scn">specular.scn</A>
+    </TD>
+    <TD vAlign=top align=middle>
+       <A href="output/shininess.jpg"><IMG width=256 src="output/shininess.jpg"></A><BR>       
+       <A href="input/shininess.scn">shininess.scn</A>
+    </TD>
+  </TR>
+  <TR>
+    <TD vAlign=top align=middle>
+       <A href="output/dirlight1.jpg"><IMG width=256 src="output/dirlight1.jpg"></A><BR>       
+       <A href="input/dirlight1.scn">dirlight1.scn</A>
+    </TD>
+    <TD vAlign=top align=middle>
+       <A href="output/pointlight1.jpg"><IMG width=256 src="output/pointlight1.jpg"></A><BR>       
+       <A href="input/pointlight1.scn">pointlight1.scn</A> 
+    </TD>
+    <TD vAlign=top align=middle>
+       <A href="output/spotlight1.jpg"><IMG width=256 src="output/spotlight1.jpg"></A><BR>       
+       <A href="input/spotlight1.scn">spotlight1.scn</A> 
+    </TD>
+    <TD vAlign=top align=middle>
+    </TD>
+  </TR>
+  <TR>
+    <TD vAlign=top align=middle>
+       <A href="output/dirlight2.jpg"><IMG width=256 src="output/dirlight2.jpg"></A><BR>       
+       <A href="input/dirlight2.scn">dirlight2.scn</A>
+    </TD>
+    <TD vAlign=top align=middle>
+       <A href="output/pointlight2.jpg"><IMG width=256 src="output/pointlight2.jpg"></A><BR>       
+       <A href="input/pointlight2.scn">pointlight2.scn</A> 
+    </TD>
+    <TD vAlign=top align=middle>
+       <A href="output/spotlight2.jpg"><IMG width=256 src="output/spotlight2.jpg"></A><BR>       
+       <A href="input/spotlight2.scn">spotlight2.scn</A> 
+    </TD>
+    <TD vAlign=top align=middle>
+    </TD>
+  </TR>
+  <TR>
+    <TD vAlign=top align=middle colspan="3">
+      This part of the assignment was also pretty straightforward. Simple use
+		of Phong illumination calculations. <BR>
+    </TD>
+  </TR>
+</TBODY>
+</TABLE>
+<HR><BR>
+
+
+<!------------------------------------------------------------------------> 
+
+<H3><A name='shadow'>Shadows</A></H3>
+<TABLE cellSpacing=0 cellPadding=10 border=0>
+<TBODY>
+  <TR>
+    <TD vAlign=top align=middle>
+       <A href="output/hardshadow.jpg"><IMG width=256 src="output/hardshadow.jpg"></A><BR>       
+       <A href="input/hardshadow.scn">hardshadow.scn</A>
+    </TD>
+  </TR>
+  <TR>
+    <TD vAlign=top align=middle colspan="3">
+      Shadows were done by casting a new ray from the intersection point <BR>
+		in the direction of the light and only doing a lighting calculation <BR>
+		if nothing intersected the shadow ray.
+    </TD>
+  </TR>
+</TBODY>
+</TABLE>
+<HR><BR>
+
+
+<!------------------------------------------------------------------------> 
+
+<H3><A name='specular'>Specular Reflection</A></H3>
+<TABLE cellSpacing=0 cellPadding=10 border=0>
+<TBODY>
+  <TR>
+    <TD vAlign=top align=middle>
+       <A href="output/specular.0.jpg"><IMG width=256 src="output/specular.0.jpg"></A><BR>       
+       -max_depth 0
+    </TD>
+    <TD vAlign=top align=middle>
+       <A href="output/specular.1.jpg"><IMG width=256 src="output/specular.1.jpg"></A><BR>       
+        -max_depth 1
+    </TD>
+    <TD vAlign=top align=middle>
+       <A href="output/specular.2.jpg"><IMG width=256 src="output/specular.2.jpg"></A><BR>       
+       -max_depth 2
+    </TD>
+  </TR>
+  <TR>
+    <TD vAlign=top align=middle colspan="3">
+      <A href="input/specular.scn">specular.scn</A><BR>&nbsp;<BR>
+    </TD>
+  </TR>
+  <TR>
+    <TD vAlign=top align=middle>
+       <A href="output/stilllife.0.jpg"><IMG width=256 src="output/stilllife.0.jpg"></A><BR>       
+       -max_depth 0
+    </TD>
+    <TD vAlign=top align=middle>
+       <A href="output/stilllife.1.jpg"><IMG width=256 src="output/stilllife.1.jpg"></A><BR>       
+        -max_depth 1
+    </TD>
+    <TD vAlign=top align=middle>
+       <A href="output/stilllife.2.jpg"><IMG width=256 src="output/stilllife.2.jpg"></A><BR>       
+       -max_depth 2
+    </TD>
+  </TR>
+  <TR>
+    <TD vAlign=top align=middle colspan="3">
+      <A href="input/stilllife.scn">stilllife.scn</A><BR>&nbsp;<BR>
+    </TD>
+  </TR>
+  <TR>
+    <TD vAlign=top align=middle colspan="3">
+      This was similar to shadow rays except the lighting calculation <BR>
+		for each specular ray cast	was carried up recursively and added to <BR> 
+		the initial intersection. <BR>
+		
+    </TD>
+  </TR>
+</TBODY>
+</TABLE>
+<HR><BR>
+
+
+
+<!------------------------------------------------------------------------> 
+
+<H3><A name='transmission'>Transmission</A></H3>
+<TABLE cellSpacing=0 cellPadding=10 border=0>
+<TBODY>
+  <TR>
+    <TD vAlign=top align=middle>
+       <A href="output/transmission.0.jpg"><IMG width=256 src="output/transmission.0.jpg"></A><BR>       
+       -max_depth 0
+    </TD>
+    <TD vAlign=top align=middle>
+       <A href="output/transmission.1.jpg"><IMG width=256 src="output/transmission.1.jpg"></A><BR>       
+       -max_depth 1
+    </TD>
+    <TD vAlign=top align=middle>
+       <A href="output/transmission.2.jpg"><IMG width=256 src="output/transmission.2.jpg"></A><BR>       
+       -max_depth 2
+    </TD>
+  </TR>
+  <TR>
+    <TD vAlign=top align=middle>
+       <A href="output/refraction2.2.perfect.jpg"><IMG width=256 src="output/refraction2.2.perfect.jpg"></A><BR>       
+       -max_depth 2
+    </TD>
+  </TR>
+  <TR>
+    <TD vAlign=top align=middle colspan="3">
+      <A href="input/transmission.scn">transmission.scn</A><BR>&nbsp;<BR>
+		<A href="input/refraction2.scn">refraction2.scn</A><BR>&nbsp;<BR>
+  </TR>
+  <TR>
+    <TD vAlign=top align=middle colspan="3">
+      Similar to specular reflection but now the rays go out on the <BR> 
+		other side of the primitive.
+    </TD>
+  </TR>
+</TBODY>
+</TABLE>
+<HR><BR>
+
+
+
+<!------------------------------------------------------------------------> 
+
+<H3><A name='refraction'>Refraction</A></H3>
+<TABLE cellSpacing=0 cellPadding=10 border=0>
+<TBODY>
+  <TR>
+    <TD vAlign=top align=middle>
+       <A href="output/refraction2.2.jpg"><IMG width=256 src="output/refraction2.2.jpg"></A><BR>       
+       -max_depth 2
+    </TD>
+  </TR>
+  <TR>
+    <TD vAlign=top align=middle colspan="3">
+      <A href="input/refraction2.scn">refraction2.scn</A><BR>&nbsp;<BR>
+    </TD>
+  </TR>
+  <TR>
+    <TD vAlign=top align=middle colspan="3">
+      Similar to perfect transmission but the ray is changed by an angle before <BR>
+		being sent into the primitive. I was experiencing some bugs with noise on <BR>
+		some test cases but it appears to be fixed now. If this appears to not work <BR>
+		with your script, please look at the code-- I think my implimentation is 	<BR>
+		worth full credit but I should get at least half credit for this feature if <BR>
+		you find it fails on something. <BR>
+    </TD>
+  </TR>
+  
+</TBODY>
+</TABLE>
+<HR><BR>
+
+
+
+<!------------------------------------------------------------------------> 
+
+<H3><A name='transformations'>Handle scene traversals with modeling transformations</A></H3>
+<TABLE cellSpacing=0 cellPadding=10 border=0>
+<TBODY>
+  <TR>
+    <TD vAlign=top align=middle>
+       <A href="output/mixedprimitives3.jpg"><IMG width=256 src="output/mixedprimitives3.jpg"></A><BR>       
+       <A href="input/mixedprimitives3.scn">mixedprimitives3.scn</A> 
+    </TD>
+    <TD vAlign=top align=middle>
+       <A href="output/transform.jpg"><IMG width=256 src="output/transform.jpg"></A><BR>       
+       <A href="input/transform.scn">transform.scn</A> 
+    </TD>
+  </TR>
+  <TR>
+    <TD vAlign=top align=middle colspan="3">
+      This was fairly straighforward-- apply transformations to the ray as <BR>
+		we descend into the scene graph.
+    </TD>
+  </TR>
+</TBODY>
+</TABLE>
+<HR><BR>
+
+
+
+<!------------------------------------------------------------------------> 
+
+<!------------------------------------------------------------------------> 
+<!------------------------------------------------------------------------> 
+
+<H3><A name='accelerate'>Ray Intersection Acceleration</A></H3>
+<TABLE cellSpacing=0 cellPadding=10 border=0>
+<TBODY>
+  <TR>
+    <TD vAlign=top align=middle>
+       <A href="output/stack.jpg"><IMG width=256 src="output/stack.jpg"></A><BR>       
+       No acceleration (> 5min)
+    </TD>
+  </TR>
+  <TR>
+    <TD vAlign=top align=middle>
+       <A href="output/stack.jpg"><IMG width=256 src="output/stack.jpg"></A><BR>       
+       Node bounding box checks (3m 28s)
+    <TD vAlign=top align=middle>
+       <A href="output/stack.jpg"><IMG width=256 src="output/stack.jpg"></A><BR>       
+       Front-to-back order (3m 15s)
+    </TD>
+  </TR>
+  
+   <TR>
+    <TD vAlign=top align=middle>
+       <A href="output/lotsofpots.jpg"><IMG width=256 src="output/lotsofpots.jpg"></A><BR>       
+       No acceleration (> 5min)
+    </TD>
+  </TR>
+  <TR>
+    <TD vAlign=top align=middle>
+       <A href="output/lotsofpots.jpg"><IMG width=256 src="output/lotsofpots.jpg"></A><BR>       
+       Node bounding box checks (48.677s)
+    <TD vAlign=top align=middle>
+       <A href="output/lotsofpots.jpg"><IMG width=256 src="output/lotsofpots.jpg"></A><BR>       
+       Front-to-back order (38.544s)
+    </TD>
+  </TR>
+
+  
+  
+  <TR>
+    <TD vAlign=top align=middle colspan="3">
+      <A href="input/stack.scn">stack.scn</A><BR>
+  </TR>
+  
+  <TR>
+    <TD vAlign=top align=middle colspan="3">
+      My implimentation runs with all of the optimizations enabled. The last  <BR>
+		time I included extra flags on an assignment I was docked eight points	<BR>
+		because my code became incompatible with the test script so I haven't	<BR>
+		included any here but if you'd like to verify these times, I've made		<BR>
+		it very easy to comment things out in the code.
+    </TD>
+  </TR>
+</TBODY>
+</TABLE>
+<HR><BR>
+
+
+<!------------------------------------------------------------------------> 
+
+<!------------------------------------------------------------------------> 
+<!------------------------------------------------------------------------> 
+<H2><A name='art'>Art Contest Submission</A></H2>
+<!------------------------------------------------------------------------> 
+<!------------------------------------------------------------------------> 
+
+<TABLE cellSpacing=0 cellPadding=10 border=0 vAlign=top align=middle>
+<TBODY>
+  <TR>
+    <TD vAlign=top align=middle>
+       <A href="art/dynamic.gif"><IMG width=512 src="art/dynamic.gif"></A><BR>   
+       This is my interesting scene and my movie (in gif form)<BR>
+    </TD>
+	 <TR>
+    <TD vAlign=top align=middle colspan="3">
+      <A href="art/Images and Scene/dynamic.scn">dynamic.scn.scn</A><BR>&nbsp;<BR>
+  </TR>
+	 <TD vAlign=top align=middle>
+		 <A href="art/Interesting.jpg"><IMG width=512 src="art/Interesting.jpg"></A><BR> 
+       Interesting blooper
+    </TD>
+	 <TR>
+	<TD vAlign=top align=middle>  
+		 <A href="art/Cylinder.jpg"><IMG width=512 src="art/Cylinder.jpg"></A><BR>    
+       This was supposed to be a cylinder..
+    </TD>
+	</TR>
+	
+	 
+  </TR>
+</TBODY>
+</TABLE>
+<HR><BR>
+
+
+
+<!------------------------------------------------------------------------> 
+<!------------------------------------------------------------------------> 
+<H2>Feedback</H2>
+<!------------------------------------------------------------------------> 
+<!------------------------------------------------------------------------> 
+
+<DL>
+  <DT>How long did you spend on this assignment?
+  <DD>Not too long.
+  <BR>&nbsp;<BR>
+
+  <DT>Was it too hard, too easy, or just right?
+  <DD>It was pretty good.
+  <BR>&nbsp;<BR>
+
+  <DT>What was the best part of the assignment?
+  <DD>Specular reflection (It worked the first time.)
+  <BR>&nbsp;<BR>
+
+  <DT>What was the worst part of the assignment?
+  <DD>Bounding box acceleration-- it lead to a lot of subtle bugs.
+  <BR>&nbsp;<BR>
+
+  <DT>How could it be improved for next year?
+  <DD>Maybe eliminate the menu format.
+  <BR>&nbsp;<BR>
+
+</DL>
+<HR><BR>
+
+
+
+<!------------------------------------------------------------------------> 
+
+</BODY>
+</HTML>

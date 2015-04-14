@@ -1,0 +1,207 @@
+<HTML>
+<HEAD>
+<TITLE>
+COS 426 Project
+</TITLE>
+<BODY>
+<CENTER>
+<H2>
+COS 426, Spring 2011<BR>
+Names: Riley Siebel, Nader Al-Naji , Kevin Mantel, Awais Tariq <BR>           <!-- Fill in your name and login -->
+Netids: asiebel, nbal, kmantel, atariq<BR>           <!-- Fill in your name and login -->
+</H2>                     
+</CENTER>
+<HR><BR>
+
+
+<!------------------------------------------------------------------------> 
+<!------------------------------------------------------------------------> 
+<H1>List of Implemented Features </H1>
+<!------------------------------------------------------------------------> 
+<!------------------------------------------------------------------------> 
+
+We believe that we have implemented the following features which includes the (4) required features and the (8) advanced features:
+<H2> Required Functionality </H2>
+
+<H3> 1) 3D Perspective Viewing and objects </H3>
+<UL>
+  
+  <LI> View Changes </LI>
+  Use F3 to change view from inside(third-person view) to outside(cockpit view) of the ship and vicevera.
+  <TBODY>
+  <TR>
+<TABLE cellSpacing=0 cellPadding=10 border=0>
+    <TD vAlign=top align=middle>
+       <A href="output/inview.jpg"><IMG width=256 src="output/inview.jpg"></A><BR>       
+       <A href="output/inview.jpg">inview</A>
+    </TD>
+    <TD vAlign=top align=middle>
+       <A href="output/outview.jpg"><IMG width=256 src="output/outview.jpg"></A><BR>       
+       <A href="output/outview.jpg">outview</A>
+    </TD>
+  </TR>
+</TBODY>
+</TABLE>
+The inview image shows the "cockpit" view and the outview image shows the third person view.
+
+<LI> Smooth Transitions </LI>
+  The up/down/left/right keys allow for realistic movements by not only moving the ship but also rotating the ship in the correct positon while its turning. Also while we are in the cockpit view the camera viewpoint changes as we turn. We also make sure that when we are not moving the ship returns to it orginal position.
+<TABLE cellSpacing=0 cellPadding=10 border=0>
+    <TD vAlign=top align=middle>
+       <A href="output/upright.jpg"><IMG width=256 src="output/upright.jpg"></A><BR>       
+       <A href="output/upright.jpg">UpRight</A>
+    </TD>
+    <TD vAlign=top align=middle>
+       <A href="output/downleft.jpg"><IMG width=256 src="output/downleft.jpg"></A><BR>       
+       <A href="output/downleft.jpg">DownLeft</A>
+    </TD>
+  </TR>
+</TBODY>
+</TABLE>
+The upright image shows that the ship rotates to give a more relistic moving "up and right" movement.
+The downleft image is a view from inside the cockpit. We can see that the camera view/perspective also changes with 
+the movement.
+
+  <LI> Clipping & hidden surface removal </LI>
+  We make sure to clip any scene outside a particular view field for computational accelaration. 
+<TABLE cellSpacing=0 cellPadding=10 border=0>
+    <TD vAlign=top align=middle>
+       <A href="output/hidden.jpg"><IMG width=256 src="output/hidden.jpg"></A><BR>       
+       <A href="output/hidden.jpg">hidden</A>
+    </TD>
+    <TD vAlign=top align=middle>
+       <A href="output/appear.jpg"><IMG width=256 src="output/appear.jpg"></A><BR>       
+       <A href="output/appear.jpg">appear</A>
+    </TD>
+  </TR>
+</TBODY>
+</TABLE>
+In the two images above we can see that as we move forward the scene at the end of the tunnel starts to appear.
+</UL>
+
+
+
+<H3> 2) Lighting and Smooth Shading </H3>
+<UL>
+  <LI> OpenGL lighting and shading model </LI>
+  We used techniques similar to those in assignment 3 to get the correct lighting model e.g. in the outview image above we can see the ship has diffeerent shading on its mesh because of the light position.
+  
+</UL>
+
+<H3> 3) User Input </H3>
+<UL>
+  <LI> Keyboard </LI>
+  We use keyboard as the main input device for movement/view changes/pausing/shooting etc. We used other iput devices as well which are described in the advanced features section.
+</UL>
+
+<H3> 4) Computer Control over some elements of the scene </H3>
+<UL>
+  <LI> Enemies </LI>
+  The enemies are quite an elaborate feature of the game. When the enemies see your ship they try shooting at you with shooting rates dependent on the map position. There's an ongoing battle between the enemies and the user. The goal is to shoot down as many enemies as possible.
+</UL>
+<HR><BR>
+
+
+<H2> Advanced Features </H2>
+
+<H3> 1) Texture Mapping </H3>
+<UL>
+  <LI> Texture Images using OpenGL </LI>
+  Textures were incorporated as part of the scene file. In the images above we can see that we have textures on the walls, ground etc.
+</UL>
+
+<H3> 2) Multiple Views </H3>
+<UL>
+  <LI> Front and Rear View </LI>
+  The screen is split into two parts with the lower part giving the front view and the upper part giving the rear view.
+<TABLE cellSpacing=0 cellPadding=10 border=0>
+    <TD vAlign=top align=middle>
+       <A href="output/front.jpg"><IMG width=256 src="output/front.jpg"></A><BR>       
+       <A href="output/front.jpg">FrontCamera</A>
+    </TD>
+    <TD vAlign=top align=middle>
+       <A href="output/rear.jpg"><IMG width=256 src="output/rear.jpg"></A><BR>       
+       <A href="output/rear.jpg">RearCamera</A>
+    </TD>
+  </TR>
+</TBODY>
+</TABLE>
+</UL>
+
+<H3> 3) On-screen Control Panel </H3>
+<UL>
+  <LI> Altitude and Health display </LI>
+  The on screen control panel is simple and consists of altitude and health. Orthographic Projection was used for displaying text.
+<TABLE cellSpacing=0 cellPadding=10 border=0>
+    <TD vAlign=top align=middle>
+       <A href="output/control.jpg"><IMG width=256 src="output/control.jpg"></A><BR>       
+       <A href="output/control.jpg">SimpleControlPanel</A>
+    </TD>
+  </TR>
+</TBODY>
+</TABLE>
+</UL>
+
+
+<H3> 4) View Frustrum Culling </H3>
+<UL>
+  <LI> Bounding Box Volumes </LI>
+  This is done by computing bounding volumes. Culling accelerated the scene rendering by quite a lot.
+</UL>
+
+<H3> 5) Procedural and Physically based modelling </H3>
+<UL>
+  <LI> Smoke using a particle engine </LI>
+  Particle engines were used to create particle systems like smoke.
+<TABLE cellSpacing=0 cellPadding=10 border=0>
+    <TD vAlign=top align=middle>
+       <A href="output/smoke.jpg"><IMG width=256 src="output/smoke.jpg"></A><BR>       
+       <A href="output/smoke.jpg">smoke</A>
+    </TD>
+  </TR>
+</TBODY>
+</TABLE>
+</UL>
+
+<H3> 6) Collision detection </H3>
+<UL>
+  <LI> Checking Bounding Volumes </LI>
+  Collision detection was done by making bounding box checks. Collision detection is also done for enemies shooting lasers at us and viceversa. So if the enemy laser hits us the health goes down and this is done by bounding box checks. Similarly if we shoot at the enemies, their health goes down and they start sinking after a certain number of hits.  
+</UL>
+
+<H3> 7) Other Input Devices </H3>
+<UL>
+  <LI> Xbox Controller </LI>
+  To provide a better gaming experience an Xbox controller was used as another input device. This was done by mapping the Xbox controls to the correct keyboard controls.
+</UL>
+
+<H3> 8) Networked Multiplayer cabability </H3>
+<UL>
+  <LI> Collaborative Play </LI>
+  We have mutliplayer capability for our game as well which allows for collaborative play over the network.
+<TABLE cellSpacing=0 cellPadding=10 border=0>
+    <TD vAlign=top align=middle>
+       <A href="output/network1.png"><IMG width=256 src="output/network1.png"></A><BR>       
+       <A href="output/network1.png">Networking1</A>
+    </TD>
+    <TD vAlign=top align=middle>
+       <A href="output/network2.png"><IMG width=256 src="output/network2.png"></A><BR>       
+       <A href="output/network2.png">Networking2</A>
+    </TD>
+  </TR>
+</TBODY>
+</TABLE>
+</UL>
+
+<HR><BR>
+
+
+
+</BODY>
+</HTML>
+
+<H2> Sources/References/Citations </H2>
+  <LI> The meshes for arwing and turrets were taken from: </LI>
+  <LI> For the particle engine some of the libraries for the vector and bmp reader were taken from : http://www.videotutorialsrock.com </LI>
+  <LI> Some of the code for orthographic projection was adapted from: http://www.lighthouse3d.com  </LI>
+<L1> The code for the Xbox controller was taken from here: http://www.zsculpt.com/website/appsutils/hidwizard/ </L1>

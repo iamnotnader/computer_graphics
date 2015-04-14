@@ -1,0 +1,286 @@
+
+camera  4.5 30 4.5  0 -0.956255 -0.292533  0 -0.292533 0.956255  0.25  0.01 1000
+
+particle_gravity 0 0 -1
+
+particle     0.000000     0.000000     0.000000  0 0 0  1 1 0.1 1 0 -1
+particle     0.000000     1.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     0.000000     2.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     0.000000     3.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     0.000000     4.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     0.000000     5.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     0.000000     6.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     0.000000     7.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     0.000000     8.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     0.000000     9.000000     0.000000  0 0 0  1 1 0.1 1 0 -1
+particle     1.000000     0.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     1.000000     1.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     1.000000     2.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     1.000000     3.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     1.000000     4.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     1.000000     5.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     1.000000     6.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     1.000000     7.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     1.000000     8.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     1.000000     9.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     2.000000     0.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     2.000000     1.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     2.000000     2.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     2.000000     3.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     2.000000     4.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     2.000000     5.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     2.000000     6.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     2.000000     7.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     2.000000     8.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     2.000000     9.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     3.000000     0.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     3.000000     1.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     3.000000     2.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     3.000000     3.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     3.000000     4.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     3.000000     5.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     3.000000     6.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     3.000000     7.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     3.000000     8.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     3.000000     9.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     4.000000     0.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     4.000000     1.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     4.000000     2.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     4.000000     3.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     4.000000     4.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     4.000000     5.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     4.000000     6.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     4.000000     7.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     4.000000     8.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     4.000000     9.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     5.000000     0.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     5.000000     1.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     5.000000     2.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     5.000000     3.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     5.000000     4.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     5.000000     5.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     5.000000     6.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     5.000000     7.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     5.000000     8.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     5.000000     9.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     6.000000     0.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     6.000000     1.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     6.000000     2.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     6.000000     3.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     6.000000     4.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     6.000000     5.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     6.000000     6.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     6.000000     7.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     6.000000     8.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     6.000000     9.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     7.000000     0.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     7.000000     1.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     7.000000     2.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     7.000000     3.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     7.000000     4.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     7.000000     5.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     7.000000     6.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     7.000000     7.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     7.000000     8.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     7.000000     9.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     8.000000     0.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     8.000000     1.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     8.000000     2.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     8.000000     3.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     8.000000     4.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     8.000000     5.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     8.000000     6.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     8.000000     7.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     8.000000     8.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     8.000000     9.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     9.000000     0.000000     0.000000  0 0 0  1 1 0.1 1 0 -1
+particle     9.000000     1.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     9.000000     2.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     9.000000     3.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     9.000000     4.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     9.000000     5.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     9.000000     6.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     9.000000     7.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     9.000000     8.000000     0.000000  0 0 0  1 0 0.1 1 0 -1
+particle     9.000000     9.000000     0.000000  0 0 0  1 1 0.1 1 0 -1
+
+particle_spring      0     10       1.000000 100 20
+particle_spring     10     11       1.000000 100 20
+particle_spring     11      1       1.000000 100 20
+particle_spring      1      0       1.000000 100 20
+particle_spring     11     12       1.000000 100 20
+particle_spring     12      2       1.000000 100 20
+particle_spring      2      1       1.000000 100 20
+particle_spring     12     13       1.000000 100 20
+particle_spring     13      3       1.000000 100 20
+particle_spring      3      2       1.000000 100 20
+particle_spring     13     14       1.000000 100 20
+particle_spring     14      4       1.000000 100 20
+particle_spring      4      3       1.000000 100 20
+particle_spring     14     15       1.000000 100 20
+particle_spring     15      5       1.000000 100 20
+particle_spring      5      4       1.000000 100 20
+particle_spring     15     16       1.000000 100 20
+particle_spring     16      6       1.000000 100 20
+particle_spring      6      5       1.000000 100 20
+particle_spring     16     17       1.000000 100 20
+particle_spring     17      7       1.000000 100 20
+particle_spring      7      6       1.000000 100 20
+particle_spring     17     18       1.000000 100 20
+particle_spring     18      8       1.000000 100 20
+particle_spring      8      7       1.000000 100 20
+particle_spring     18     19       1.000000 100 20
+particle_spring     19      9       1.000000 100 20
+particle_spring      9      8       1.000000 100 20
+particle_spring     10     20       1.000000 100 20
+particle_spring     20     21       1.000000 100 20
+particle_spring     21     11       1.000000 100 20
+particle_spring     21     22       1.000000 100 20
+particle_spring     22     12       1.000000 100 20
+particle_spring     22     23       1.000000 100 20
+particle_spring     23     13       1.000000 100 20
+particle_spring     23     24       1.000000 100 20
+particle_spring     24     14       1.000000 100 20
+particle_spring     24     25       1.000000 100 20
+particle_spring     25     15       1.000000 100 20
+particle_spring     25     26       1.000000 100 20
+particle_spring     26     16       1.000000 100 20
+particle_spring     26     27       1.000000 100 20
+particle_spring     27     17       1.000000 100 20
+particle_spring     27     28       1.000000 100 20
+particle_spring     28     18       1.000000 100 20
+particle_spring     28     29       1.000000 100 20
+particle_spring     29     19       1.000000 100 20
+particle_spring     20     30       1.000000 100 20
+particle_spring     30     31       1.000000 100 20
+particle_spring     31     21       1.000000 100 20
+particle_spring     31     32       1.000000 100 20
+particle_spring     32     22       1.000000 100 20
+particle_spring     32     33       1.000000 100 20
+particle_spring     33     23       1.000000 100 20
+particle_spring     33     34       1.000000 100 20
+particle_spring     34     24       1.000000 100 20
+particle_spring     34     35       1.000000 100 20
+particle_spring     35     25       1.000000 100 20
+particle_spring     35     36       1.000000 100 20
+particle_spring     36     26       1.000000 100 20
+particle_spring     36     37       1.000000 100 20
+particle_spring     37     27       1.000000 100 20
+particle_spring     37     38       1.000000 100 20
+particle_spring     38     28       1.000000 100 20
+particle_spring     38     39       1.000000 100 20
+particle_spring     39     29       1.000000 100 20
+particle_spring     30     40       1.000000 100 20
+particle_spring     40     41       1.000000 100 20
+particle_spring     41     31       1.000000 100 20
+particle_spring     41     42       1.000000 100 20
+particle_spring     42     32       1.000000 100 20
+particle_spring     42     43       1.000000 100 20
+particle_spring     43     33       1.000000 100 20
+particle_spring     43     44       1.000000 100 20
+particle_spring     44     34       1.000000 100 20
+particle_spring     44     45       1.000000 100 20
+particle_spring     45     35       1.000000 100 20
+particle_spring     45     46       1.000000 100 20
+particle_spring     46     36       1.000000 100 20
+particle_spring     46     47       1.000000 100 20
+particle_spring     47     37       1.000000 100 20
+particle_spring     47     48       1.000000 100 20
+particle_spring     48     38       1.000000 100 20
+particle_spring     48     49       1.000000 100 20
+particle_spring     49     39       1.000000 100 20
+particle_spring     40     50       1.000000 100 20
+particle_spring     50     51       1.000000 100 20
+particle_spring     51     41       1.000000 100 20
+particle_spring     51     52       1.000000 100 20
+particle_spring     52     42       1.000000 100 20
+particle_spring     52     53       1.000000 100 20
+particle_spring     53     43       1.000000 100 20
+particle_spring     53     54       1.000000 100 20
+particle_spring     54     44       1.000000 100 20
+particle_spring     54     55       1.000000 100 20
+particle_spring     55     45       1.000000 100 20
+particle_spring     55     56       1.000000 100 20
+particle_spring     56     46       1.000000 100 20
+particle_spring     56     57       1.000000 100 20
+particle_spring     57     47       1.000000 100 20
+particle_spring     57     58       1.000000 100 20
+particle_spring     58     48       1.000000 100 20
+particle_spring     58     59       1.000000 100 20
+particle_spring     59     49       1.000000 100 20
+particle_spring     50     60       1.000000 100 20
+particle_spring     60     61       1.000000 100 20
+particle_spring     61     51       1.000000 100 20
+particle_spring     61     62       1.000000 100 20
+particle_spring     62     52       1.000000 100 20
+particle_spring     62     63       1.000000 100 20
+particle_spring     63     53       1.000000 100 20
+particle_spring     63     64       1.000000 100 20
+particle_spring     64     54       1.000000 100 20
+particle_spring     64     65       1.000000 100 20
+particle_spring     65     55       1.000000 100 20
+particle_spring     65     66       1.000000 100 20
+particle_spring     66     56       1.000000 100 20
+particle_spring     66     67       1.000000 100 20
+particle_spring     67     57       1.000000 100 20
+particle_spring     67     68       1.000000 100 20
+particle_spring     68     58       1.000000 100 20
+particle_spring     68     69       1.000000 100 20
+particle_spring     69     59       1.000000 100 20
+particle_spring     60     70       1.000000 100 20
+particle_spring     70     71       1.000000 100 20
+particle_spring     71     61       1.000000 100 20
+particle_spring     71     72       1.000000 100 20
+particle_spring     72     62       1.000000 100 20
+particle_spring     72     73       1.000000 100 20
+particle_spring     73     63       1.000000 100 20
+particle_spring     73     74       1.000000 100 20
+particle_spring     74     64       1.000000 100 20
+particle_spring     74     75       1.000000 100 20
+particle_spring     75     65       1.000000 100 20
+particle_spring     75     76       1.000000 100 20
+particle_spring     76     66       1.000000 100 20
+particle_spring     76     77       1.000000 100 20
+particle_spring     77     67       1.000000 100 20
+particle_spring     77     78       1.000000 100 20
+particle_spring     78     68       1.000000 100 20
+particle_spring     78     79       1.000000 100 20
+particle_spring     79     69       1.000000 100 20
+particle_spring     70     80       1.000000 100 20
+particle_spring     80     81       1.000000 100 20
+particle_spring     81     71       1.000000 100 20
+particle_spring     81     82       1.000000 100 20
+particle_spring     82     72       1.000000 100 20
+particle_spring     82     83       1.000000 100 20
+particle_spring     83     73       1.000000 100 20
+particle_spring     83     84       1.000000 100 20
+particle_spring     84     74       1.000000 100 20
+particle_spring     84     85       1.000000 100 20
+particle_spring     85     75       1.000000 100 20
+particle_spring     85     86       1.000000 100 20
+particle_spring     86     76       1.000000 100 20
+particle_spring     86     87       1.000000 100 20
+particle_spring     87     77       1.000000 100 20
+particle_spring     87     88       1.000000 100 20
+particle_spring     88     78       1.000000 100 20
+particle_spring     88     89       1.000000 100 20
+particle_spring     89     79       1.000000 100 20
+particle_spring     80     90       1.000000 100 20
+particle_spring     90     91       1.000000 100 20
+particle_spring     91     81       1.000000 100 20
+particle_spring     91     92       1.000000 100 20
+particle_spring     92     82       1.000000 100 20
+particle_spring     92     93       1.000000 100 20
+particle_spring     93     83       1.000000 100 20
+particle_spring     93     94       1.000000 100 20
+particle_spring     94     84       1.000000 100 20
+particle_spring     94     95       1.000000 100 20
+particle_spring     95     85       1.000000 100 20
+particle_spring     95     96       1.000000 100 20
+particle_spring     96     86       1.000000 100 20
+particle_spring     96     97       1.000000 100 20
+particle_spring     97     87       1.000000 100 20
+particle_spring     97     98       1.000000 100 20
+particle_spring     98     88       1.000000 100 20
+particle_spring     98     99       1.000000 100 20
+particle_spring     99     89       1.000000 100 20

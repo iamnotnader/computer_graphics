@@ -1,0 +1,5 @@
+#for demonstrating intersection with n-sided polygonal mesh.
+
+camera -2.30604 1.2574 2.73915  0.607655 -0.331333 -0.721785  0.113337 0.935695 -0.334111  0.25  0.00866025 86.6025 
+
+mesh   -1    cube.off

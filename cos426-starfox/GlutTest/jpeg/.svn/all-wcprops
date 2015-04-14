@@ -1,0 +1,857 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/18/trunk/GlutTest/jpeg
+END
+filelist.doc
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/filelist.doc
+END
+jmemansi.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jmemansi.c
+END
+jchuff.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jchuff.c
+END
+djpeg.1
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/djpeg.1
+END
+coderules.doc
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/coderules.doc
+END
+jmemmac.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jmemmac.c
+END
+jchuff.h
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jchuff.h
+END
+transupp.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/transupp.c
+END
+ltmain.sh
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/ltmain.sh
+END
+jcparam.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jcparam.c
+END
+transupp.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/transupp.h
+END
+jquant1.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jquant1.c
+END
+jconfig.bcc
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jconfig.bcc
+END
+ltconfig
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/ltconfig
+END
+jcphuff.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jcphuff.c
+END
+wrjpgcom.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/wrjpgcom.c
+END
+jcmarker.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jcmarker.c
+END
+jcsample.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jcsample.c
+END
+jmemmgr.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jmemmgr.c
+END
+jdmarker.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jdmarker.c
+END
+jdsample.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jdsample.c
+END
+libjpeg.lib
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/libjpeg.lib
+END
+jmorecfg.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jmorecfg.h
+END
+rdcolmap.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/rdcolmap.c
+END
+jconfig.doc
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jconfig.doc
+END
+jinclude.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jinclude.h
+END
+jpegint.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jpegint.h
+END
+rdrle.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/rdrle.c
+END
+jdinput.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jdinput.c
+END
+jpeglib.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jpeglib.h
+END
+makefile.bcc
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/makefile.bcc
+END
+jconfig.sas
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jconfig.sas
+END
+rdjpgcom.1
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/rdjpgcom.1
+END
+rdtarga.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/rdtarga.c
+END
+jconfig.wat
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jconfig.wat
+END
+djpeg.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/djpeg.c
+END
+install.doc
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/install.doc
+END
+jdpostct.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jdpostct.c
+END
+jmemsys.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jmemsys.h
+END
+cdjpeg.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/cdjpeg.c
+END
+makefile.manx
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/makefile.manx
+END
+cdjpeg.h
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/cdjpeg.h
+END
+makefile.vc
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/makefile.vc
+END
+rdbmp.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/rdbmp.c
+END
+ansi2knr.1
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/ansi2knr.1
+END
+wrppm.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/wrppm.c
+END
+cjpeg.1
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/cjpeg.1
+END
+jfdctfst.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jfdctfst.c
+END
+jcmaster.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jcmaster.c
+END
+config.guess
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/config.guess
+END
+jdmaster.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jdmaster.c
+END
+jidctfst.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jidctfst.c
+END
+wrgif.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/wrgif.c
+END
+makefile.sas
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/makefile.sas
+END
+jquant2.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jquant2.c
+END
+makefile.wat
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/makefile.wat
+END
+makefile.mms
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/makefile.mms
+END
+jmemname.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jmemname.c
+END
+jdct.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jdct.h
+END
+jdatasrc.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jdatasrc.c
+END
+jmemdosa.asm
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jmemdosa.asm
+END
+jconfig.manx
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jconfig.manx
+END
+jcapistd.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jcapistd.c
+END
+jdapistd.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jdapistd.c
+END
+jversion.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jversion.h
+END
+rdjpgcom.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/rdjpgcom.c
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/README
+END
+jdmerge.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jdmerge.c
+END
+makvms.opt
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/makvms.opt
+END
+ansi2knr.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/ansi2knr.c
+END
+cjpeg.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/cjpeg.c
+END
+jdcolor.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jdcolor.c
+END
+install-sh
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/install-sh
+END
+jdatadst.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jdatadst.c
+END
+jconfig.vms
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jconfig.vms
+END
+jdtrans.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jdtrans.c
+END
+wrtarga.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/wrtarga.c
+END
+jconfig.st
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jconfig.st
+END
+structure.doc
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/structure.doc
+END
+change.log
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/change.log
+END
+makefile.ansi
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/makefile.ansi
+END
+rdswitch.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/rdswitch.c
+END
+makelib.ds
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/makelib.ds
+END
+jconfig.dj
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jconfig.dj
+END
+jccolor.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jccolor.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/Makefile
+END
+jconfig.mac
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jconfig.mac
+END
+jfdctflt.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jfdctflt.c
+END
+makefile.vms
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/makefile.vms
+END
+jidctflt.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jidctflt.c
+END
+jctrans.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jctrans.c
+END
+jutils.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jutils.c
+END
+jcprepct.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jcprepct.c
+END
+jconfig.mc6
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jconfig.mc6
+END
+rdppm.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/rdppm.c
+END
+ckconfig.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/ckconfig.c
+END
+wizard.doc
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/wizard.doc
+END
+makeproj.mac
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/makeproj.mac
+END
+makdjpeg.st
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/makdjpeg.st
+END
+jpegtran.1
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jpegtran.1
+END
+jcmainct.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jcmainct.c
+END
+jdmainct.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jdmainct.c
+END
+jcapimin.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jcapimin.c
+END
+rdgif.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/rdgif.c
+END
+jdapimin.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jdapimin.c
+END
+wrrle.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/wrrle.c
+END
+jconfig.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jconfig.cfg
+END
+jcdctmgr.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jcdctmgr.c
+END
+jddctmgr.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jddctmgr.c
+END
+makljpeg.st
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/makljpeg.st
+END
+configure
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/configure
+END
+jerror.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jerror.c
+END
+maktjpeg.st
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/maktjpeg.st
+END
+jdhuff.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jdhuff.c
+END
+jerror.h
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jerror.h
+END
+jmemnobs.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jmemnobs.c
+END
+jdhuff.h
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jdhuff.h
+END
+config.sub
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/config.sub
+END
+makefile.mc6
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/makefile.mc6
+END
+jcinit.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jcinit.c
+END
+makcjpeg.st
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/makcjpeg.st
+END
+usage.doc
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/usage.doc
+END
+wrbmp.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/wrbmp.c
+END
+makefile.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/makefile.cfg
+END
+example.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/example.c
+END
+jmemdos.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jmemdos.c
+END
+libjpeg.doc
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/libjpeg.doc
+END
+jfdctint.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jfdctint.c
+END
+jconfig.vc
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jconfig.vc
+END
+cderror.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/cderror.h
+END
+wrjpgcom.1
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/wrjpgcom.1
+END
+jidctint.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jidctint.c
+END
+jpegtran.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jpegtran.c
+END
+makefile.unix
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/makefile.unix
+END
+jccoefct.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jccoefct.c
+END
+jdcoefct.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jdcoefct.c
+END
+jcomapi.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jcomapi.c
+END
+jconfig.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jconfig.h
+END
+makeapps.ds
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/makeapps.ds
+END
+jdphuff.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jdphuff.c
+END
+makefile.dj
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/makefile.dj
+END
+jidctred.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/11/trunk/GlutTest/jpeg/jidctred.c
+END

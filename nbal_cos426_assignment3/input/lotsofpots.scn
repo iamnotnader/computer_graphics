@@ -1,0 +1,49 @@
+
+begin -1
+1 0 0 0
+0 1 0 0
+0 0 1 -5
+0 0 0 1
+mesh   -1    teapot.off
+
+	begin -1
+	1 0 0 0
+	0 1 0 0
+	0 0 1 -4.9
+	0 0 0 1
+
+	mesh   -1    teapot.off
+
+		begin -1
+		1 0 0 0
+		0 1 0 0
+		0 0 1 -4.8
+		0 0 0 1
+
+		mesh   -1    teapot.off
+
+			begin -1
+			1 0 0 0
+			0 1 0 0
+			0 0 1 -4.7
+			0 0 0 1
+
+			mesh   -1    teapot.off
+			end
+		end
+	end
+end
+
+
+
+
+begin -1
+1 0 0 0
+0 1 0 0
+0 0 1 0
+0 0 0 1
+mesh   -1    teapot.off
+end
+
+#38.544s
+

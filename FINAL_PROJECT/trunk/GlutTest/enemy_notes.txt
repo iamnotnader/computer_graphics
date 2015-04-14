@@ -1,0 +1,16 @@
+Here's what I'm going for with the enemies..
+
+First, I've thought about creating a separate Enemy class, but currently, it is declared as a struct inside R3Scene.
+
+The enemies are generated at predefined points in the scn file, and they aren't modified whe they are out of view.
+When they're in view, they move along a predefined path (apparently this is how it happens in the game?) unless their fixed variable is set. 
+They have a field of view for detecting the player ship, and if the ship is within it's firing angle, it shoots Projectiles at a certain rate.
+    (this could be simplified if we assume all ships face the -z direction (assuming the player is moving in the +z direction); then, they could just
+    fire as long as they are in view.)
+
+The lasers are Projectiles, which are just line segments as of now. They could be changed to meshes if we do well with this. The length of the laser is
+determined by the enemy.
+
+The enemies will be drawn and modified in a method separate from the scene graph drawing.
+
+What do you think?

@@ -1,0 +1,306 @@
+<HTML>
+<HEAD>
+<TITLE>
+COS 426 Assignment 4
+</TITLE>
+<BODY>
+<CENTER>
+<H2>
+COS 426, Spring 2011<BR>
+Nader Al-Naji, nbal<BR>           <!-- Fill in your name and login -->
+</H2>                     
+</CENTER>
+<HR><BR>
+
+
+<!------------------------------------------------------------------------> 
+<!------------------------------------------------------------------------> 
+<H2>List of Implemented Features</H2>
+<!------------------------------------------------------------------------> 
+<!------------------------------------------------------------------------> 
+
+<ul>
+<li><A href="#firststep"> First step: </A>
+<ul>
+
+<li><b>Euler integration</b>
+</ul>
+</ul>
+
+
+<ul>
+<li><A href="#particlesources"> Particle sources: </A>
+<ul>
+
+<li><b>Sphere particle sources</b>
+<li>Box particle sources
+<li>Line particle sources 
+<li>Mesh particle sources
+
+
+</ul>
+</ul>
+
+<!------------------------------------------------------------------------>
+
+<ul>
+<li><A href="#particlesinks"> Particle sinks: </A>
+<ul>
+
+<li><b>Sphere particle sinks</b>
+<li><b>Box particle sinks</b> 
+<li>Mesh particle sinks
+
+</ul>
+</ul>
+
+<!------------------------------------------------------------------------>
+
+<ul>
+<li><A href="#simulation"> Particle simulation: </A>
+<ul>
+
+<li><b>Particle lifetimes</b>
+
+</ul>
+</ul>
+
+<!------------------------------------------------------------------------>
+
+<ul>
+<li><A href="#collisiondetection">Collision detection: </A>
+
+<ul>
+
+<li><b>Particle-scene collisions</b>   
+
+</ul>
+</ul>
+
+<ul>
+<li><A href="#particleinteraction">Particle interaction: </A>
+<ul>
+
+<li>Particle attraction
+<li>Rope
+<li>Cloth
+<li>Complex Cloth Interaction (Object-Cloth Collision)
+<li>Flocking
+
+
+</ul>
+</ul>
+
+<ul>
+<li> <A href="#artcontest">Art contest: </A>
+<ul> 
+<li>a movie </li>
+<li>
+</ul>
+</ul>
+
+<hr><br>
+
+
+<HR><BR>
+
+
+
+
+<!------------------------------------------------------------------------> 
+<!------------------------------------------------------------------------> 
+<H2>Demonstration of Implemented Features</H2>
+<!------------------------------------------------------------------------> 
+<!------------------------------------------------------------------------> 
+
+<!------------------------------------------------------------------------> 
+<H3><A name="firststep"> First step  </A></H3>
+<!------------------------------------------------------------------------> 
+
+<TABLE>
+<TBODY>
+  <TR>
+    <TD vAlign=top align=middle>
+       <A href="output/particlemotion.gif"><IMG  width=256 src="output/particlemotion.gif"></A><BR>       
+       <A href="input/oneparticle.scn">oneparticle.scn</A>
+    </TD>
+    <TD vAlign=top align=middle>
+       <A href="output/effectofgravity.gif"><IMG width=256  src="output/effectofgravity.gif"></A><BR>       
+       <A href="input/cannonball.scn">cannonball.scn</A>
+    </TD>  
+    <TD vAlign=top align=middle>
+       <A href="output/effectofdrag.gif"><IMG width=256 src="output/effectofdrag.gif"></A><BR>       
+       <A href="input/dragrace.scn">dragrace.scn</A>
+    </TD>  
+</TR>
+</TBODY>
+</TABLE>
+
+Standard Euler integration with simple forces produced this output.
+
+<hr><br>
+
+<!------------------------------------------------------------------------> 
+<H3><A name="particlesources"> Particle sources </A></H3>
+<!------------------------------------------------------------------------> 
+
+<TABLE cellSpacing=0 cellPadding=10 border=0>
+<TBODY>
+  <TR>
+    <TD vAlign=top align=middle>
+       <A href="output/sources.gif"><IMG width=256 src="output/sources.gif"></A><BR>       
+       <A href="input/sources.scn">sources.scn</A>
+    </TD>
+  </TR>
+</TBODY>
+</TABLE>
+
+I implemented four sources: mesh, line, sphere, and box. All particles <br>
+are generated uniformly on the surfaces of the objects that generate them.
+
+<hr><br>
+
+<!------------------------------------------------------------------------> 
+<H3><A name="particlesinks"> Particle sinks </A></H3>
+<!------------------------------------------------------------------------> 
+
+<TABLE cellSpacing=0 cellPadding=10 border=0>
+<TBODY>
+  <TR>
+    <TD vAlign=top align=middle>
+       <A href="output/spheresink.gif"><IMG width=256 src="output/spheresink.gif"></A><BR>       
+       <A href="input/spheresink.scn">spheresink.scn</A>
+    </TD>
+	 <TD vAlign=top align=middle>
+       <A href="output/boxsink.gif"><IMG width=256 src="output/boxsink.gif"></A><BR>       
+       <A href="input/boxsink.scn">boxsink.scn</A>
+    </TD>
+	 <TD vAlign=top align=middle>
+       <A href="output/meshsink.gif"><IMG width=256 src="output/meshsink.gif"></A><BR>       
+       <A href="input/meshsink.scn">meshsink.scn</A>
+    </TD>
+  </TR>
+</TBODY>
+</TABLE>
+
+I implemented three sinks: box, sphere, and mesh. All sinks attract particles <br>
+to them in the standard way and delete particles when they hit their surface. <br>
+<hr><br>
+
+<!------------------------------------------------------------------------> 
+<H3><A name="simulation"> Particle simulation </A></H3>
+<!------------------------------------------------------------------------> 
+
+
+<TABLE>
+<TBODY>
+  <TR>
+    <TD vAlign=top align=middle>
+       <A href="output/differentlifetimes.gif"><IMG width=256 src="output/differentlifetimes.gif"></A><BR>       
+       <A href="input/differentlifetimes.scn">differentlifetimes.scn</A>
+    </TD>
+  </TR>
+</TBODY>
+</TABLE>
+
+Didn't do too much in this area; just implemented lifetimes for particles.
+<HR><BR>
+
+<!------------------------------------------------------------------------> 
+<H3><A name="collisiondetection"> Collision detection </A></H3>
+<!------------------------------------------------------------------------> 
+
+<TABLE>
+<TBODY>
+  <TR>
+    <TD vAlign=top align=middle>
+       <A href="output/collisiondetection.gif"><IMG width=256 src="output/collisiondetection.gif"></A><BR>       
+       <A href="input/collisiondetection.scn">collisiondetection.scn</A>
+    </TD>
+</TR>
+</TBODY>
+</TABLE>
+
+This is implemented in general for all scenes. This is a simple demonstration;
+the complex interactions in cloth.scn below are more thorough.
+<HR><BR>
+
+<!------------------------------------------------------------------------> 
+<H3><A name="particleinteraction"> Particle interaction </A></H3>
+<!------------------------------------------------------------------------> 
+
+<TABLE>
+<TBODY>
+  <TR>
+    <TD vAlign=top align=middle>
+       <A href="output/mutualparticleattraction.gif"><IMG width=256 src="output/mutualparticleattraction.gif"></A><BR>       
+       <A href="input/opposites.scn">opposites.scn</A>
+    </TD>
+    <TD vAlign=top align=middle>
+       <A href="output/rope.gif"><IMG width=256 src="output/rope.gif"></A><BR>       
+       <A href="input/rope.scn">rope.scn</A>
+    </TD>
+    <TD vAlign=top align=middle>
+       <A href="output/cloth.gif"><IMG width=256 src="output/cloth.gif"></A><BR>       
+       <A href="input/cloth.scn">cloth.scn</A>
+    </TD>
+    <TD vAlign=top align=middle>
+       <A href="output/flocking.gif"><IMG width=256 src="output/flocking.gif"></A><BR>       
+       <A href="input/flocking.scn">flocking.scn</A>
+    </TD>
+</TR>
+</TBODY>
+</TABLE>
+
+Gravitation and spring forces were standard from lecture. Getting spring interactions<br>
+to work with collisions was a little trickier. Note that the assignment page states<br>
+<br>
+<br>
+Boid forces take into account and correct: <br>
+	1) their position relative to the average<br>
+	2) their velocity relative to the average<br>
+	3) collision with objects in the scene (with rays)<br>
+Note 1: because collision detection is implemented, as per the assignment spec, using<br>
+rays, sometimes the boid doesn't see the object until it's too late and hits it anyway.<br>
+This is rare, but it is a drawback of shooting a ray, which doesn't accurately represent<br>
+the peripheral vision of real-world organisms.<br>
+Note 2: In order to get the spring scenes to work with the -recordandquit option, <br> 
+you MUST ALSO SPECIFY THE -slow OPTION.<br>
+In the same way, in order to get the boid scenes to work, you MUST SPECIFY THE<br>
+-boid OPTION. <br>
+Otherwise, they will not work properly. <br>
+<HR><BR>
+
+
+<!------------------------------------------------------------------------> 
+<!------------------------------------------------------------------------> 
+<H2><A name='art'>Art Contest Submission</A></H2>
+<!------------------------------------------------------------------------> 
+<!------------------------------------------------------------------------> 
+
+<TABLE cellSpacing=0 cellPadding=10 border=0 vAlign=top align=middle>
+<TBODY>
+  <TR>
+    <TD vAlign=top align=middle>
+       <A href="art/LUMOS.gif"><IMG width=512 src="art/LUMOS.gif"></A><BR>       
+       A magic wand!
+    </TD>
+  </TR>
+</TBODY>
+</TABLE>
+<HR><BR>
+
+<!------------------------------------------------------------------------> 
+<!------------------------------------------------------------------------> 
+<H2>Feedback</H2>
+<!------------------------------------------------------------------------> 
+<!------------------------------------------------------------------------> 
+
+<HR><BR>
+
+
+
+<!------------------------------------------------------------------------> 
+
+</BODY>
+</HTML>

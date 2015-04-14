@@ -1,0 +1,173 @@
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/!svn/ver/18/trunk/GlutTest/R3
+END
+R3Point.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/11/trunk/GlutTest/R3/R3Point.cpp
+END
+R3Cone.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/11/trunk/GlutTest/R3/R3Cone.h
+END
+R3Distance.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/11/trunk/GlutTest/R3/R3Distance.cpp
+END
+R3Ray.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/11/trunk/GlutTest/R3/R3Ray.cpp
+END
+R3Sphere.h
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/11/trunk/GlutTest/R3/R3Sphere.h
+END
+R3Mesh.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/11/trunk/GlutTest/R3/R3Mesh.cpp
+END
+R3Line.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/11/trunk/GlutTest/R3/R3Line.h
+END
+R3Box.h
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/11/trunk/GlutTest/R3/R3Box.h
+END
+R3Point.h
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/11/trunk/GlutTest/R3/R3Point.h
+END
+R3Plane.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/11/trunk/GlutTest/R3/R3Plane.cpp
+END
+R3Distance.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/11/trunk/GlutTest/R3/R3Distance.h
+END
+R3Ray.h
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/11/trunk/GlutTest/R3/R3Ray.h
+END
+R3Mesh.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/11/trunk/GlutTest/R3/R3Mesh.h
+END
+R3Vector.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/11/trunk/GlutTest/R3/R3Vector.cpp
+END
+R3Segment.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/11/trunk/GlutTest/R3/R3Segment.cpp
+END
+R3Plane.h
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/11/trunk/GlutTest/R3/R3Plane.h
+END
+R3Matrix.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/11/trunk/GlutTest/R3/R3Matrix.cpp
+END
+R3Segment.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/11/trunk/GlutTest/R3/R3Segment.h
+END
+R3Vector.h
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/11/trunk/GlutTest/R3/R3Vector.h
+END
+R3Cylinder.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/11/trunk/GlutTest/R3/R3Cylinder.cpp
+END
+R3Matrix.h
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/11/trunk/GlutTest/R3/R3Matrix.h
+END
+R3Cylinder.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/11/trunk/GlutTest/R3/R3Cylinder.h
+END
+R3Cone.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/11/trunk/GlutTest/R3/R3Cone.cpp
+END
+R3.h
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/11/trunk/GlutTest/R3/R3.h
+END
+R3Sphere.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/11/trunk/GlutTest/R3/R3Sphere.cpp
+END
+R3Line.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/11/trunk/GlutTest/R3/R3Line.cpp
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/11/trunk/GlutTest/R3/Makefile
+END
+R3Box.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/11/trunk/GlutTest/R3/R3Box.cpp
+END

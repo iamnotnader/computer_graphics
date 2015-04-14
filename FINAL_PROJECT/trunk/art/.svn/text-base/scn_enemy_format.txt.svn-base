@@ -1,0 +1,7 @@
+Enemy format:::
+
+standard mesh format, except use
+
+enemy (int fixed) (int material) xxx.off
+(double initial velocity) x y z
+(int health)

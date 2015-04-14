@@ -1,0 +1,421 @@
+<HTML>
+<HEAD>
+<TITLE>
+COS 426 Assignment 2
+</TITLE>
+<BODY>
+<CENTER>
+<H2>
+COS 426, Spring 2011<BR>
+Nader Al-Naji, nbal<BR>           <!-- Fill in your name and login -->
+</H2>                     
+</CENTER>
+<HR><BR>
+
+
+<!------------------------------------------------------------------------> 
+<!------------------------------------------------------------------------> 
+<H2>List of Implemented Features</H2>
+<!------------------------------------------------------------------------> 
+<!------------------------------------------------------------------------> 
+
+<UL>
+  <LI> Average Edge Lengths</A></LI>
+  <LI> <A href="#pervertexnormals">Per-Vertex Normals</A></LI>
+  <LI> <A href="#gaussiancurvatures">Gaussian Curvatures</A></LI>
+  <LI> <A href="#randomnoise">Random Noise</A></LI>
+  <LI> <A href="#inflate">Inflate</A></LI>
+  <LI> <A href="#fun">Fun</A></LI>
+  <LI> <A href="#smooth">Smooth</A></LI>
+  <LI> <A href="#sharpen">Sharpen</A></LI>
+  <LI> <A href="#truncate">Truncate</A></LI>
+  <LI> <A href="#splitfaces">Split Faces</A></LI>
+  <LI> <A href="#loopsubdivision">Loop Subdivision</A></LI>
+  <LI> <A href="#surfaceofrevolution">Surface Of Revolution</A></LI>
+  <LI> <A href="#surfacesweep">Surface Sweep</A></LI>
+  <LI> <A href="#art">Art contest submission</A></LI>
+</UL>
+<HR><BR>
+
+
+
+
+<!------------------------------------------------------------------------> 
+<!------------------------------------------------------------------------> 
+<H2>Demonstration of Implemented Features</H2>
+<!------------------------------------------------------------------------> 
+<!------------------------------------------------------------------------> 
+
+<H3><A name='pervertexnormals'>Per-Vertex Normals</A></H3>
+<TABLE cellSpacing=0 cellPadding=10 border=0>
+<TBODY>
+  <TR>
+    <TD vAlign=top align=middle>
+       <A href="output/normal1.jpg"><IMG width=250 src="output/normal1.jpg"></A><BR>       
+       Cube
+    </TD>
+    <TD vAlign=top align=middle>
+       <A href="output/normal2.jpg"><IMG width=250 src="output/normal2.jpg"></A><BR>       
+       Cheetah
+  </TR>
+   <TR>
+    <TD vAlign=top align=middle colspan="5">
+	Normals are calculated after creating and initializing a half-edge data structure, <BR>
+	 then traversing the half-edges for each vertex. To view these  <BR>
+     uncomment the call to UpdateNormal() in the UpdateVertexNormals() function.
+	</TD>
+  </TR>
+</TBODY>
+</TABLE>
+<HR><BR>
+
+
+<!------------------------------------------------------------------------> 
+
+<H3><A name='gaussiancurvatures'>Gaussian Curvatures</A></H3>
+<TABLE cellSpacing=0 cellPadding=10 border=0>
+<TBODY>
+  <TR>
+    <TD vAlign=top align=middle>
+       <A href="output/curvature1.jpg"><IMG width=250 src="output/curvature1.jpg"></A><BR>       
+       Firefly-Human 
+    </TD>
+    <TD vAlign=top align=middle>
+       <A href="output/curvature2.jpg"><IMG width=250 src="output/curvature2.jpg"></A><BR>       
+       Moo
+    </TD>
+     </TR>
+	     <TR>
+    <TD vAlign=top align=middle colspan="5">
+	 Curvatures are calculated by traversing half-edges for each vertex. <BR>
+	 First the area associated with each vertex was calculated, then the <BR>
+	 angle of deflection. The resulting value was then simply the area <BR>
+	 over the angle of deflection. Black vertices indicate concavity (c > 0) <BR>
+	 and blue vertices indicate convexity (c < 0). To view these, uncomment <BR>
+     the call to UpdateCurvature() in the UpdateVertexCurvatures() function.
+	</TD>
+  </TR>
+  </TBODY>
+</TABLE>
+<HR><BR>
+
+<!------------------------------------------------------------------------> 
+
+<H3><A name='randomnoise'>Random Noise</A></H3>
+<PRE>meshpro input/meshname.off output/meshname_randomnoise_factor.off -noise factor</PRE>
+<TABLE cellSpacing=0 cellPadding=10 border=0>
+<TBODY>
+  <TR>
+    <TD vAlign=top align=middle>
+       <A href="output/noise1.jpg"><IMG width=200 src="output/noise1.jpg"></A><BR>       
+       Input 
+    </TD>
+    <TD vAlign=top align=middle>
+       <A href="output/noise2.jpg"><IMG width=200 src="output/noise2.jpg"></A><BR>       
+       0.4 
+    </TD>
+    <TD vAlign=top align=middle>
+       <A href="output/noise2.jpg"><IMG width=200 src="output/noise3.jpg"></A><BR>       
+       0.8 
+	</TD>
+	<TR>
+    <TD vAlign=top align=middle colspan="5">
+	 Each vertex moved by a random amount determined by the <BR>
+	 average length of its adjacent edges.
+	</TD>
+  </TR>
+    </TBODY>
+</TABLE>
+<HR><BR>
+
+<!------------------------------------------------------------------------> 
+
+<H3><A name='inflate'>Inflate</A></H3>
+<PRE>meshpro input/meshname_in.off output/meshname_out.off -inflate factor</PRE>
+<TABLE cellSpacing=0 cellPadding=10 border=0>
+<TBODY>
+  <TR>
+    <TD vAlign=top align=middle>
+       <A href="output/inflate4.jpg"><IMG width=200 src="output/inflate4.jpg"></A><BR>       
+       Input 
+    </TD>
+    <TD vAlign=top align=middle>
+       <A href="output/inflate1.jpg"><IMG width=200 src="output/inflate1.jpg"></A><BR>       
+       0.5 
+    </TD>
+    <TD vAlign=top align=middle>
+       <A href="output/inflate2.jpg"><IMG width=200 src="output/inflate2.jpg"></A><BR>       
+       1 
+    </TD>
+    <TD vAlign=top align=middle>
+      <A href="output/inflate3.jpg"><IMG width=200 src="output/inflate3.jpg"></A><BR> 
+      3
+    </TD>
+	 	<TR>
+    <TD vAlign=top align=middle colspan="5">
+	 Each vertex moved outward along its normal by a factor <BR>
+	 determined by its average length and a user-specified value.
+	</TD>
+  </TR>
+</TBODY>
+</TABLE>
+<HR><BR>
+
+<!------------------------------------------------------------------------> 
+
+<H3><A name='fun'>Fun (Swirl Warp)</A></H3>
+<PRE>meshpro input/meshname_in.off output/meshname_out.off -fun</PRE>
+<TABLE cellSpacing=0 cellPadding=10 border=0>
+<TBODY>
+  <TR>
+    <TD vAlign=top align=middle>
+       <A href="output/fun1.jpg"><IMG width=400 src="output/fun1.jpg"></A><BR>       
+       Input 
+    </TD>
+    <TD vAlign=top align=middle>
+       <A href="output/fun2.jpg"><IMG width=400 src="output/fun2.jpg"></A><BR>       
+       Swirled
+    </TD>
+	 	<TR>
+    <TD vAlign=top align=middle colspan="5">
+	 Each vertex is rotated in space by an angle determined by <BR>
+	 how far away it is from a central axis.
+	</TD>
+  </TR>
+    </TBODY>
+</TABLE>
+<HR><BR>
+
+<H3><A name='smooth'>Smooth</A></H3>
+<PRE>meshpro input/meshname_in.off output/meshname_out.off -smooth </PRE>
+<TABLE cellSpacing=0 cellPadding=10 border=0>
+<TBODY>
+  <TR>
+    <TD vAlign=top align=middle>
+       <A href="output/smooth1.jpg"><IMG width=400 src="output/smooth1.jpg"></A><BR>       
+       Input 
+    </TD>
+    <TD vAlign=top align=middle>
+       <A href="output/smooth2.jpg"><IMG width=400 src="output/smooth2.jpg"></A><BR>       
+       -smooth -smooth
+    </TD>
+    <TD vAlign=top align=middle>
+       <A href="output/smooth3.jpg"><IMG width=400 src="output/smooth3.jpg"></A><BR>       
+       -smooth -smooth -smooth -smooth
+    </TD>
+    </TR>
+	 	 	<TR>
+    <TD vAlign=top align=middle colspan="5">
+	 Each vertex is moved to a position determined by a linear <BR>
+	 combination of itself and its adjacent vertices.
+	</TD>
+  </TR>
+
+  </TBODY>
+</TABLE>
+<HR><BR>
+
+<!------------------------------------------------------------------------>
+
+<H3><A name='sharpen'>Sharpen</A></H3>
+<PRE>meshpro input/meshname_in.off output/meshname_out.off -sharpen factor</PRE>
+<TABLE cellSpacing=0 cellPadding=10 border=0>
+<TBODY>
+  <TR>
+    <TD vAlign=top align=middle>
+       <A href="output/sharpen1.jpg"><IMG width=400 src="output/sharpen1.jpg"></A><BR>       
+       Input 
+    </TD>
+    <TD vAlign=top align=middle>
+       <A href="output/sharpen2.jpg"><IMG width=400 src="output/sharpen2.jpg"></A><BR>       
+       -sharpen -sharpen 
+    </TD>
+    <TD vAlign=top align=middle>
+       <A href="output/sharpen3.jpg"><IMG width=400 src="output/sharpen3.jpg"></A><BR>       
+       -sharpen -sharpen -sharpen -sharpen 
+    </TD>
+  <TR>
+    <TD vAlign=top align=middle colspan="5">
+	 This is similar to smoothing except that the metric used to 
+	 move vertices is reversed.
+	</TD>
+  </TR>
+
+</TBODY>
+</TABLE>
+<HR><BR>
+
+<!------------------------------------------------------------------------>
+
+
+<H3><A name='truncate'>Truncate</A></H3>
+<PRE>meshpro input/meshname_in.off output/meshname_out.off -truncate factor</PRE>
+<TABLE cellSpacing=0 cellPadding=10 border=0>
+<TBODY>
+  <TR>
+    <TD vAlign=top align=middle>
+       <A href="output/truncate1.jpg"><IMG width=300 src="output/truncate1.jpg"></A><BR>       
+       Cube 
+    </TD>
+    <TD vAlign=top align=middle>
+       <A href="output/truncate2.jpg"><IMG width=300 src="output/truncate2.jpg"></A><BR>       
+       Truncate .5 
+    </TD>
+    <TD vAlign=top align=middle>
+       <A href="output/truncate3.jpg"><IMG width=300 src="output/truncate3.jpg"></A><BR>       
+       Surface of Revolution <BR>(made with -revolution)
+    </TD>
+    <TD vAlign=top align=middle>
+      <A href="output/truncate4.jpg"><IMG width=300 src="output/truncate4.jpg"></A><BR> 
+      Truncate .3 
+    </TD>
+  </TR>
+  <TR>
+    <TD vAlign=top align=middle colspan="5">
+  	 For each vertex, create a set of new vertices a distance t (given by user)  <BR>
+	 along its outgoing edges. Remove the original vertex and add a face connecting <BR>
+	 the new vertices created together. Here this is shown on a cube and a surface <BR>
+	 of revolution.  
+	 </TD>
+  </TR>
+</TBODY>
+</TABLE>
+<HR><BR>
+
+<!------------------------------------------------------------------------>
+
+<H3><A name='splitfaces'>Split Faces</A></H3>
+<PRE>meshpro input/meshname_in.off output/meshname_out.off -split </PRE>
+<TABLE cellSpacing=0 cellPadding=10 border=0>
+<TBODY>
+  <TR>
+    <TD vAlign=top align=middle>
+       <A href="output/loop1.jpg"><IMG width=200 src="output/loop1.jpg"></A><BR>       
+       Input <BR> (inside a cube)
+    </TD>
+    <TD vAlign=top align=middle>
+       <A href="output/loop2.jpg"><IMG width=200 src="output/loop2.jpg"></A><BR>       
+       -split 
+    </TD>
+    <TD vAlign=top align=middle>
+       <A href="output/loop3.jpg"><IMG width=200 src="output/loop3.jpg"></A><BR>       
+       -split -split
+    </TD>
+    <TD vAlign=top align=middle>
+      <A href="output/loop4.jpg"><IMG width=200 src="output/loop4.jpg"></A><BR> 
+      -split -split -split 
+    </TD>
+  </TR>
+  <TR>
+    <TD vAlign=top align=middle colspan="5">
+	 Create V+1 faces for each face in the original mesh by splitting the edges of each<BR>
+	 face and connecting the newly created vertices together. Shown here is the<BR>
+	 result of applying this process multiple times on a cube. The face is being<BR>
+	 shown from the inside to avoid overlapping lines from the camera's perspective.<BR>    
+   </TD>
+  </TR>
+</TBODY>
+</TABLE>
+<HR><BR>
+
+<!------------------------------------------------------------------------>
+
+<H3><A name='loopsubdivision'>Loop Subdivision</A></H3>
+<PRE>meshpro input/meshname_in.off output/meshname_out.off -loop</PRE>
+<TABLE cellSpacing=0 cellPadding=10 border=0>
+<TBODY>
+  <TR>
+    <TD vAlign=top align=middle>
+       <A href="output/split1.jpg"><IMG width=200 src="output/split1.jpg"></A><BR>       
+       Input 
+    </TD>
+    <TD vAlign=top align=middle>
+       <A href="output/split2.jpg"><IMG width=200 src="output/split2.jpg"></A><BR>       
+       -loop 
+    </TD>
+    <TD vAlign=top align=middle>
+       <A href="output/split3.jpg"><IMG width=200 src="output/split3.jpg"></A><BR>       
+       -loop -loop 
+    </TD>
+    <TD vAlign=top align=middle>
+      <A href="output/split4.jpg"><IMG width=200 src="output/split4.jpg"></A><BR> 
+      -loop -loop -loop
+    </TD>
+  </TR>
+  <TR>
+    <TD vAlign=top align=middle colspan="5">
+	 Split the faces of the mesh and then move vertices by an amount determined <BR>
+	 by predefined weights.
+    </TD>
+  </TR>
+</TBODY>
+</TABLE>
+<HR><BR>
+
+<!------------------------------------------------------------------------>
+
+<H3><A name='surfaceofrevolution'>Surface of Revolution</A></H3>
+<PRE>meshpro input/meshname_in.off output/meshname_out.off -revolution <file:profile> <real:px> <real:py> <real:pz> <real:vx> <real:vy> <real:vz> <real:angle_step>
+</PRE>
+<TABLE cellSpacing=0 cellPadding=10 border=0>
+<TBODY>
+  <TR>
+    <TD vAlign=top align=middle>
+       <A href="output/rev1.jpg"><IMG width=300 src="output/rev1.jpg"></A><BR>       
+       Semi-Circle
+    </TD>
+    <TD vAlign=top align=middle>
+       <A href="output/rev2.jpg"><IMG width=300 src="output/rev2.jpg"></A><BR>       
+       Wine-Glass Profile
+    </TD>
+    <TD vAlign=top align=middle>
+       <A href="output/rev3.jpg"><IMG width=300 src="output/rev3.jpg"></A><BR>       
+       Wine-Glass Profile <BR> (after -truncate .5) 
+    </TD>
+  </TR>
+  <TR>
+    <TD vAlign=top align=middle colspan="5">
+ 	 Create a surface by rotating a profile curve along an axis using a given angle<BR>
+	 step size. Here the wine-glass is then truncated to show that the rotation <BR>
+	 preserves the integrity of the half-edge data structure used.
+	 <BR><BR>
+    </TD>
+  </TR>
+</TBODY>
+</TABLE>
+<HR><BR>
+
+<!------------------------------------------------------------------------> 
+
+<H3><A name='surfacesweep'>Surface Sweep</A></H3>
+<PRE>meshpro input/meshname_in.off output/meshname_out.off -sweep factor</PRE>
+<TABLE cellSpacing=0 cellPadding=10 border=0>
+<TBODY>
+  <TR>
+    <TD vAlign=top align=middle>
+       <A href="output/sweep1.jpg"><IMG width=400 src="output/sweep1.jpg"></A><BR>       
+       Semi-Circle Along Perpendicular Semi-Circle 
+    </TD>
+    <TD vAlign=top align=middle>
+       <A href="output/sweep2.jpg"><IMG width=400 src="output/sweep2.jpg"></A><BR>       
+       Semi-Circle Along Parallel Semi-Circle 
+    </TD>
+	 	<TR>
+    <TD vAlign=top align=middle colspan="5">
+	 Sweep a profile curve along another profile curve to produce a mesh. <BR> <BR>
+	</TD>
+  </TR>
+</TBODY>
+</TABLE>
+<HR><BR>
+
+<!------------------------------------------------------------------------> 
+
+<HR><BR>
+
+
+
+<!------------------------------------------------------------------------> 
+
+</BODY>
+</HTML>

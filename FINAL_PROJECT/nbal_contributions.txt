@@ -1,0 +1,32 @@
+Name: Nader Al-Naji
+netid: nbal
+
+
+Features I implemented:
+Implemented networked multi-player
+	-Bind UDP socket to port
+	-Thread receive loop
+	-Send game state to peer (transformation matrix, enemy data, etc..)
+	-Receive game state from peer asynchronously
+	-Update state
+
+Implemented collision detection
+	-Assume the ship to be a point
+	-As the scene is rendered, check if ship point is inside any boxes
+	-If it is, check how close it is to each face
+	-Cut off movement in direction of face if within some epsilon
+	-Add more control points to provide a better approximation
+ 
+Configured other input devices to work with game
+	-Use hid-wizard to interface
+	-Use gamepad companion plugin to map voltages to keys
+
+Implemented view-frustum culling
+	-Check outside of view frustum
+	-Cull z axis using bbox checks	
+
+
+Helped with particle simulation.
+	-Collisions, generation, culling, etc..
+Helped with game levels
+	-Designed large portions of all three levels

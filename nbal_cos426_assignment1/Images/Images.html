@@ -1,0 +1,826 @@
+<html>
+
+<head>
+ <title>
+  COS 426 Assignment 0
+ </title>
+</head>
+
+<body bgcolor="#ffffff">
+
+<br><hr><br>
+
+<center>
+<h2>
+COS 426, Spring 2010
+<br>
+Nader Al-Naji, nbal           <!-- Fill in your name and login -->
+</h2>                     
+</center>
+
+<br><hr><br>
+
+
+<!------------------------------------------------------------------------> 
+<!------------------------------------------------------------------------> 
+<h2>Demonstration of Implemented Features</h2>
+<!------------------------------------------------------------------------> 
+<!------------------------------------------------------------------------> 
+
+<h3>Art Contest</h3>
+<table>
+ <tr>
+  <td>
+   <a href="art/Szymon Simpson.gif">
+    <img width = 250 src="art/Szymon Simpson.gif">
+   </a>
+   </td>
+ </tr>
+ <tr>
+  <td align="center"> Szymon Simpson </td>
+ </tr>
+</table>
+
+<h3>Morphing</h3>
+<table>
+ <tr>
+  <td>
+   <a href="input/fishA.jpg">
+    <img width = 250 src="input/fishA.jpg">
+   </a>
+   </td>
+  <td>
+   <a href="input/fishB.jpg">
+    <img width = 250 src="input/fishB.jpg">
+   </a>
+   </td>
+ </tr>
+ <tr>
+  <td align="center"> Source Image </td>
+   <td align="center"> Destination Image </td>
+ </tr>
+</table>
+<table>
+ <tr>
+  <td>
+   <a href="output/Morph/fishy.gif">
+    <img width = 250 src="output/Morph/fishy.gif">
+   </a>
+   </td>
+ </tr>
+ <tr>
+  <td align="center"> Transformation </td>
+ </tr>
+</table>
+
+
+<h3>Median Filtering</h3>
+<table>
+ <tr>
+  <td>
+   <a href="output/Median/globos_median1.jpg">
+    <img width = 415 src="output/Median/globos_median1.jpg">
+   </a>
+  </td>
+  <td>
+   <a href="output/Median/globos_median2.jpg">
+    <img width = 415 src="output/Median/globos_median2.jpg">
+   </a>
+  </td>
+    <td>
+   <a href="output/Median/globos_median3.jpg">
+    <img width = 415 src="output/Median/globos_median3.jpg">
+   </a>
+  </td>
+ </tr>
+ <tr>
+  <td align="center"> Input </td>
+  <td align="center"> Sigma = .2 </td>
+   <td align="center"> Sigma = .9 </td>
+ </tr>
+</table>
+
+<h3>Fun (Swirl)</h3>
+<table>
+ <tr>
+  <td>
+   <a href="output/Fun/globos_fun.jpg">
+    <img width=300 src="output/Fun/globos_fun.jpg">
+   </a>
+  </td>
+   </tr>
+ <tr>
+  <td align="center"> Input </td>
+ </tr>
+</table>
+<table>
+ <tr>
+  <td>
+   <a href="output/Fun/globos_fun1.jpg">
+    <img width=300 src="output/Fun/globos_fun1.jpg">
+   </a>
+  </td>
+  <td>
+   <a href="output/Fun/globos_fun2.jpg">
+    <img width=300 src="output/Fun/globos_fun2.jpg">
+   </a>
+  </td>
+  <td>
+   <a href="output/Fun/globos_fun3.jpg">
+    <img width=300 src="output/Fun/globos_fun3.jpg">
+   </a>
+  </td>
+ </tr>
+ <tr>
+  <td align="center"> Point Sampling, Angle = 1 </td>
+  <td align="center"> Gaussian Sampling, Angle = 1 </td>
+  <td align="center"> Bilinear Interpolation, Angle = 1 </td>
+ </tr>
+</table>
+<table>
+ <tr>
+  <td>
+   <a href="output/Fun/globos_fun1-1.jpg">
+    <img width=300 src="output/Fun/globos_fun1-1.jpg">
+   </a>
+  </td>
+  <td>
+   <a href="output/Fun/globos_fun2-1.jpg">
+    <img width=300 src="output/Fun/globos_fun2-1.jpg">
+   </a>
+  </td>
+  <td>
+   <a href="output/Fun/globos_fun3-1.jpg">
+    <img width=300 src="output/Fun/globos_fun3-1.jpg">
+   </a>
+  </td>
+ </tr>
+ <tr>
+  <td align="center"> Point Sampling, Angle = 10 </td>
+  <td align="center"> Gaussian Sampling, Angle = 10 </td>
+  <td align="center"> Bilinear Interpolation, Angle = 10 </td>
+ </tr>
+</table>
+
+
+<h3>Compositing</h3>
+<table>
+ <tr>
+  <td>
+   <a href="intput/GUYS.jpg">
+    <img width=200 src="input/GUYS.jpg">
+   </a>
+  </td>
+  <td>
+   <a href="input/GUYSMATTE.jpg">
+    <img width=200 src="input/GUYSMATTE.jpg">
+   </a>
+  </td>
+  <td>
+   <a href="input/GUY.jpg">
+    <img width=200 src="input/GUY.jpg">
+   </a>
+  </td>
+    <td>
+   <a href="input/GUYMATTE.jpg">
+    <img width=200 src="input/GUYMATTE.jpg">
+   </a>
+  </td>
+    <td>
+   <a href="output/Compositing/globos_composite.jpg.">
+    <img width=200 src="output/Compositing/globos_composite.jpg">
+   </a>
+  </td>
+</tr>
+ <tr>
+ <td align="center">  Top Image</td>
+   <td align="center"> Top Mask </td>
+   <td align="center">  Bottom Image</td>
+   <td align="center"> Bottom Mask </td>
+  <td align="center"> Result </td>
+ </tr>
+</table>
+
+<h3>Rotate</h3>
+<table>
+ <tr>
+  <td>
+   <a href="input/globos_de_colores.jpg">
+    <img width=300 src="input/globos_de_colores.jpg">
+   </a>
+  </td>
+   </tr>
+ <tr>
+  <td align="center"> Input </td>
+ </tr>
+</table>
+<table>
+ <tr>
+  <td>
+   <a href="output/Rotate/globos_rotate1.jpg">
+    <img width=300 src="output/Rotate/globos_rotate1.jpg">
+   </a>
+  </td>
+  <td>
+   <a href="output/Rotate/globos_rotate2.jpg">
+    <img width=300 src="output/Rotate/globos_rotate2.jpg">
+   </a>
+  </td>
+  <td>
+   <a href="output/Rotate/globos_rotate3.jpg">
+    <img width=300 src="output/Rotate/globos_rotate3.jpg">
+   </a>
+  </td>
+ </tr>
+ <tr>
+  <td align="center"> Point Sampling, Angle = 1 </td>
+  <td align="center"> Gaussian Sampling, Angle = 1 </td>
+  <td align="center"> Bilinear Interpolation, Angle = 1 </td>
+ </tr>
+</table>
+<table>
+ <tr>
+  <td>
+   <a href="output/Rotate/globos_rotate1-1.jpg">
+    <img width=300 src="output/Rotate/globos_rotate1-1.jpg">
+   </a>
+  </td>
+  <td>
+   <a href="output/Rotate/globos_rotate2-1.jpg">
+    <img width=300 src="output/Rotate/globos_rotate2-1.jpg">
+   </a>
+  </td>
+  <td>
+   <a href="output/Rotate/globos_rotate3-1.jpg">
+    <img width=300 src="output/Rotate/globos_rotate3-1.jpg">
+   </a>
+  </td>
+ </tr>
+ <tr>
+  <td align="center"> Point Sampling, Angle = 2 </td>
+  <td align="center"> Gaussian Sampling, Angle = 2 </td>
+  <td align="center"> Bilinear Interpolation, Angle = 2 </td>
+ </tr>
+</table>
+
+
+
+<h3>Blur</h3>
+<table>
+ <tr>
+  <td>
+   <a href="output/Blur/globos_blur1.jpg">
+    <img width=200 src="output/Blur/globos_blur1.jpg">
+   </a>
+  </td>
+  <td>
+   <a href="output/Blur/globos_blur2.jpg">
+    <img width=200 src="output/Blur/globos_blur2.jpg">
+   </a>
+  </td>
+  <td>
+   <a href="output/Blur/globos_blur3.jpg">
+    <img width=200 src="output/Blur/globos_blur3.jpg">
+   </a>
+  </td>
+ </tr>
+ <tr>
+  <td align="center"> Input </td>
+  <td align="center"> Sigma = 2 </td>
+  <td align="center"> Sigma = 8 </td>
+ </tr>
+</table>
+
+<h3>Motion Blur</h3>
+<table>
+ <tr>
+  <td>
+   <a href="output/Motion_Blur/fast1.jpg">
+    <img width=200 src="output/Motion_Blur/fast1.jpg">
+   </a>
+  </td>
+  <td>
+   <a href="output/Motion_Blur/fast2.jpg">
+    <img width=200 src="output/Motion_Blur/fast2.jpg">
+   </a>
+  </td>
+  <td>
+   <a href="output/Motion_Blur/fast3.jpg">
+    <img width=200 src="output/Motion_Blur/fast3.jpg">
+   </a>
+  </td>
+  <td>
+   <a href="output/Motion_Blur/fast4.jpg">
+    <img width=200 src="output/Motion_Blur/fast4.jpg">
+   </a>
+  </td>
+ </tr>
+ <tr>
+  <td align="center"> Input </td>
+  <td align="center"> amount = 10 </td>
+  <td align="center"> amount = 20 </td>
+  <td align="center"> amount = 30 </td>
+ </tr>
+</table>
+
+<h3>Dithering</h3>
+<table>
+ <tr>
+  <td>
+   <a href="input/globos_de_colores.jpg">
+    <img width = 200 src="input/globos_de_colores.jpg">
+   </a>
+  </td>
+  </tr>
+ <tr>
+  <td align="center"> Input </td>
+ </tr>
+</table>
+<table>
+ <tr>
+  <td>
+   <a href="output/Dithering/globos_quantize1.jpg">
+    <img width = 200 src="output/Dithering/globos_quantize1.jpg">
+   </a>
+  </td>
+  <td>
+   <a href="output/Dithering/globos_quantize2.jpg">
+    <img width = 200 src="output/Dithering/globos_quantize2.jpg">
+   </a>
+  </td>
+    <td>
+   <a href="output/Dithering/globos_quantize3.jpg">
+    <img width = 200 src="output/Dithering/globos_quantize3.jpg">
+   </a>
+  </td>
+  <td>
+   <a href="output/Dithering/globos_quantize4.jpg">
+    <img width = 200 src="output/Dithering/globos_quantize4.jpg">
+   </a>
+  </td>
+    <td>
+   <a href="output/Dithering/globos_quantize5.jpg">
+    <img width = 200 src="output/Dithering/globos_quantize5.jpg">
+   </a>
+  </td>
+ </tr>
+ <tr>
+  <td align="center"> Quantize 1 </td>
+  <td align="center"> Quantize 2 </td>
+  <td align="center"> Quantize 3 </td>
+  <td align="center"> Quantize 4 </td>
+  <td align="center"> Quantize 5 </td>
+ </tr>
+</table>
+<table>
+ <tr>
+  <td>
+   <a href="output/Dithering/globos_randomdither1.jpg">
+    <img width = 200 src="output/Dithering/globos_randomdither1.jpg">
+   </a>
+  </td>
+  <td>
+   <a href="output/Dithering/globos_randomdither2.jpg">
+    <img width = 200 src="output/Dithering/globos_randomdither2.jpg">
+   </a>
+  </td>
+    <td>
+   <a href="output/Dithering/globos_randomdither3.jpg">
+    <img width = 200 src="output/Dithering/globos_randomdither3.jpg">
+   </a>
+  </td>
+  <td>
+   <a href="output/Dithering/globos_randomdither4.jpg">
+    <img width = 200 src="output/Dithering/globos_randomdither4.jpg">
+   </a>
+  </td>
+    <td>
+   <a href="output/Dithering/globos_randomdither5.jpg">
+    <img width = 200 src="output/Dithering/globos_randomdither5.jpg">
+   </a>
+  </td>
+ </tr>
+ <tr>
+  <td align="center"> Randm Dither 1 </td>
+  <td align="center"> Randm Dither 2 </td>
+  <td align="center"> Randm Dither 3 </td>
+  <td align="center"> Randm Dither 4 </td>
+  <td align="center"> Randm Dither 5 </td>
+ </tr>
+</table>
+<table>
+ <tr>
+  <td>
+   <a href="output/Dithering/globos_ordereddither1.jpg">
+    <img width = 200 src="output/Dithering/globos_ordereddither1.jpg">
+   </a>
+  </td>
+  <td>
+   <a href="output/Dithering/globos_ordereddither2.jpg">
+    <img width = 200 src="output/Dithering/globos_ordereddither2.jpg">
+   </a>
+  </td>
+    <td>
+   <a href="output/Dithering/globos_ordereddither3.jpg">
+    <img width = 200 src="output/Dithering/globos_ordereddither3.jpg">
+   </a>
+  </td>
+  <td>
+   <a href="output/Dithering/globos_ordereddither4.jpg">
+    <img width = 200 src="output/Dithering/globos_ordereddither4.jpg">
+   </a>
+  </td>
+    <td>
+   <a href="output/Dithering/globos_ordereddither5.jpg">
+    <img width = 200 src="output/Dithering/globos_ordereddither5.jpg">
+   </a>
+  </td>
+ </tr>
+ <tr>
+  <td align="center"> Ordered Dither 1 </td>
+  <td align="center"> Ordered Dither 2 </td>
+  <td align="center"> Ordered Dither 3 </td>
+  <td align="center"> Ordered Dither 4 </td>
+  <td align="center"> Ordered Dither 5 </td>
+ </tr>
+</table>
+<table>
+ <tr>
+  <td>
+   <a href="output/Dithering/globos_floyd1.jpg">
+    <img width = 200 src="output/Dithering/globos_floyd1.jpg">
+   </a>
+  </td>
+  <td>
+   <a href="output/Dithering/globos_floyd2.jpg">
+    <img width = 200 src="output/Dithering/globos_floyd2.jpg">
+   </a>
+  </td>
+    <td>
+   <a href="output/Dithering/globos_floyd3.jpg">
+    <img width = 200 src="output/Dithering/globos_floyd3.jpg">
+   </a>
+  </td>
+  <td>
+   <a href="output/Dithering/globos_floyd4.jpg">
+    <img width = 200 src="output/Dithering/globos_floyd4.jpg">
+   </a>
+  </td>
+    <td>
+   <a href="output/Dithering/globos_floyd5.jpg">
+    <img width = 200 src="output/Dithering/globos_floyd5.jpg">
+   </a>
+  </td>
+ </tr>
+ <tr>
+  <td align="center"> Floyd-Steinberg 1 </td>
+  <td align="center"> Floyd-Steinberg 2 </td>
+  <td align="center"> Floyd-Steinberg 3 </td>
+  <td align="center"> Floyd-Steinberg 4 </td>
+  <td align="center"> Floyd-Steinberg 5 </td>
+ </tr>
+</table>
+
+
+
+
+<h3>Scale</h3>
+<table>
+ <tr>
+  <td>
+   <a href="input/globos_de_colores.jpg">
+    <img src="input/globos_de_colores.jpg">
+   </a>
+  </td>
+  <td>
+   <a href="output/Scale/globos_scale.jpg">
+    <img src="output/Scale/globos_scale.jpg">
+   </a>
+  </td>
+    <td>
+   <a href="output/Scale/globos_scaleblur.jpg">
+    <img src="output/Scale/globos_scaleblur.jpg">
+   </a>
+  </td>
+  <td>
+   <a href="output/Scale/globos_scalebilerp1.jpg">
+    <img src="output/Scale/globos_scalebilerp1.jpg">
+   </a>
+  </td>
+ </tr>
+ <tr>
+  <td align="center"> Input </td>
+  <td align="center"> Point Sampling (.5x) </td>
+  <td align="center"> Gaussian Sampling (.5x) </td>
+  <td align="center"> Bilinear Interpolation (.5x) </td>
+ </tr>
+</table>
+<table>
+ <tr>
+      <td>
+   <a href="output/Scale/globos_scale2.jpg">
+    <img src="output/Scale/globos_scale2.jpg">
+   </a>
+  </td>
+ </tr>
+ <tr>
+  <td align="center"> Point Sampling (1.2x) </td>
+ </tr>
+</table>
+<table>
+ <tr>
+    <td>
+   <a href="output/Scale/globos_scaleblur2.jpg">
+    <img src="output/Scale/globos_scaleblur2.jpg">
+   </a>
+  </td>
+ </tr>
+ <tr>
+  <td align="center"> Gaussian Sampling (1.2x) </td>
+ </tr>
+</table>
+<table>
+ <tr>
+  <td>
+   <a href="output/Scale/globos_scalebilerp2.jpg">
+    <img src="output/Scale/globos_scalebilerp2.jpg">
+   </a>
+  </td>
+ </tr>
+ <tr>
+  <td align="center"> Bilinear Interpolation (1.2x) </td>
+ </tr>
+</table>
+
+<h3>Gamma</h3>
+<table>
+ <tr>
+  <td>
+   <a href="input/globos_de_colores.jpg">
+    <img width=400 src="input/globos_de_colores.jpg">
+   </a>
+  </td>
+  <td>
+   <a href="output/Gamma/gamma1.jpg">
+    <img width=400 src="output/Gamma/gamma1.jpg">
+   </a>
+  </td>
+    <td>
+   <a href="output/Gamma/gamma2.jpg">
+    <img width=400 src="output/Gamma/gamma2.jpg">
+   </a>
+  </td>
+ </tr>
+ <tr>
+  <td align="center"> Input </td>
+  <td align="center"> Gamma = .1 </td>
+  <td align="center"> Gamma = 2 </td>
+ </tr>
+</table>
+
+<h3>Black and White</h3>
+<table>
+ <tr>
+  <td>
+   <a href="input/globos_de_colores.jpg">
+    <img width=400 src="input/globos_de_colores.jpg">
+   </a>
+  </td>
+  <td>
+   <a href="output/Black_and_White/globos_blackandwhite.jpg">
+    <img width=400 src="output/Black_and_White/globos_blackandwhite.jpg">
+   </a>
+  </td>
+ </tr>
+ <tr>
+  <td align="center"> Input </td>
+  <td align="center"> Black and White </td>
+ </tr>
+</table>
+
+<h3>Edge Detect</h3>
+<table>
+ <tr>
+  <td>
+   <a href="input/globos_de_colores.jpg">
+    <img width=400 src="input/globos_de_colores.jpg">
+   </a>
+  </td>
+  <td>
+   <a href="output/EdgeDetect/globos_edgedetector.jpg">
+    <img width=400 src="output/EdgeDetect/globos_edgedetector.jpg">
+   </a>
+  </td>
+ </tr>
+ <tr>
+  <td align="center"> Input </td>
+  <td align="center"> Edge Detect </td>
+ </tr>
+</table>
+
+<h3>Sharpen</h3>
+<table>
+ <tr>
+  <td>
+   <a href="input/globos_de_colores.jpg">
+    <img width=400 src="input/globos_de_colores.jpg">
+   </a>
+  </td>
+  <td>
+   <a href="output/Sharpen/globos_sharpen.jpg">
+    <img width=400 src="output/Sharpen/globos_sharpen.jpg">
+   </a>
+  </td>
+ </tr>
+ <tr>
+  <td align="center"> Input </td>
+  <td align="center"> Sharpen </td>
+ </tr>
+</table>
+
+<h3>Bilateral Interpolation</h3>
+<table>
+ <tr>
+  <td>
+   <a href="input/luca.jpg">
+    <img width=400 src="input/luca.jpg">
+   </a>
+  </td>
+  <td>
+   <a href="output/Bilateral/globos_bilateral2.jpg">
+    <img width=400 src="output/Bilateral/globos_bilateral2.jpg">
+   </a>
+  </td>
+    <td>
+   <a href="output/Bilateral/globos_bilateral3.jpg">
+    <img width=400 src="output/Bilateral/globos_bilateral3.jpg">
+   </a>
+  </td>
+ </tr>
+ <tr>
+  <td align="center"> Input </td>
+  <td align="center"> DomainSigma = .7, RangeSigma = .1 </td>
+  <td align="center"> DomainSigma = 3, RangeSigma = .1 </td>
+ </tr>
+</table>
+
+<h3>Saturation</h3>
+<table>
+ <tr>
+  <td>
+   <a href="output/Saturation/globos_saturation1.jpg">
+    <img width = 200 src="output/Saturation/globos_saturation1.jpg">
+   </a>
+  </td>
+      <td>
+   <a href="output/Saturation/globos_saturation2.jpg">
+    <img width = 200 src="output/Saturation/globos_saturation2.jpg">
+   </a>
+  </td>
+  <td>
+   <a href="output/Saturation/globos_saturation3.jpg">
+    <img width = 200 src="output/Saturation/globos_saturation3.jpg">
+   </a>
+  </td>
+  <td>
+   <a href="output/Saturation/globos_saturation4.jpg">
+    <img width = 200 src="output/Saturation/globos_saturation4.jpg">
+   </a>
+  </td>
+ </tr>
+ <tr>
+  <td align="center"> Saturation = -1 </td>
+  <td align="center"> Saturation = 0 </td>
+  <td align="center"> Saturation = 1 </td>
+  <td align="center"> Saturation = 2 </td>
+ </tr>
+</table>
+
+<h3>Extract Channel</h3>
+<table>
+ <tr>
+  <td>
+   <a href="input/globos_de_colores.jpg">
+    <img width = 200 src="input/globos_de_colores.jpg">
+   </a>
+  </td>
+      <td>
+   <a href="output/Extract/globos_extract2.jpg">
+    <img width = 200 src="output/Extract/globos_extract2.jpg">
+   </a>
+  </td>
+  <td>
+   <a href="output/Extract/globos_extract1.jpg">
+    <img width = 200 src="output/Extract/globos_extract1.jpg">
+   </a>
+  </td>
+  <td>
+   <a href="output/Extract/globos_extract3.jpg">
+    <img width = 200 src="output/Extract/globos_extract3.jpg">
+   </a>
+  </td>
+ </tr>
+ <tr>
+  <td align="center"> Input </td>
+  <td align="center"> Red </td>
+  <td align="center"> Blue </td>
+  <td align="center"> Green </td>
+ </tr>
+</table>
+
+<h3>Contrast</h3>
+<table>
+ <tr>
+  <td>
+   <a href="input/globos_de_colores.jpg">
+    <img width=200 src="input/globos_de_colores.jpg">
+   </a>
+  </td>
+  <td>
+   <a href="output/Contrast/globos_contrast1.jpg">
+    <img width=200 src="output/Contrast/globos_contrast1.jpg">
+   </a>
+  </td>
+  <td>
+   <a href="output/Contrast/globos_contrast2.jpg">
+    <img width=200 src="output/Contrast/globos_contrast2.jpg">
+   </a>
+  </td>
+  <td>
+   <a href="output/Contrast/globos_contrast3.jpg">
+    <img width=200 src="output/Contrast/globos_contrast3.jpg">
+   </a>
+  </td>
+    <td>
+   <a href="output/Contrast/globos_contrast4.jpg">
+    <img width=200 src="output/Contrast/globos_contrast4.jpg">
+   </a>
+  </td>
+ </tr>
+ <tr>
+  <td align="center"> Input </td>
+  <td align="center"> Factor = -.5 </td>
+  <td align="center"> Factor = 0 </td>
+  <td align="center"> Factor = 1 </td>
+  <td align="center"> Factor = 3 </td>
+ </tr>
+</table>
+
+<br><hr></br>
+
+<!------------------------------------------------------------------------> 
+<!------------------------------------------------------------------------> 
+<h2>Implementation Notes</h2>
+<!------------------------------------------------------------------------> 
+<!------------------------------------------------------------------------> 
+
+<p>
+Gaussian Blur: used an nxn matrix as a filter kernel where n is determined by sigma (as specified). First added the linear Gaussian to the columns of the filter, then to the rows, then normalized. Then convoluted on every pixel.
+<p>
+Motion Blur: used a linear filter of length amount where filter[i] = i+1 up to amount. Convoluted on each pixel using this filter and then normalized on the fly.
+<p>
+Median Filter: used an nxn filter window where n was determined by sigma (as specified for the Gaussian). Then initialized a linear array of pointers to R2Pixel objects of length n. For each pixel, a pointer to it and its neighbors inside the square window were added to the linear array. Afterwards, the first n*n/2 R2Pixels were sorted by luminance using a simple selection sort, and the n*n/2th pixel was chosen to replace the pixel being examined.
+<p>
+Bilateral Filter: used an nxn Gaussian kernel where n is determined by domainsigma (as specified). Then convoluted on every pixel using the Gaussian kernel and a difference value between the pixel being examined and its neighbors (using luminance) within the Gaussian kernel's window. Then normalized on the fly.
+<p>
+<dt>
+Scale (Point Sampling): initialized a temporary image of different dimensions (based on arguments). Then replaced each pixel in the new image with its corresponding pixel in the original image.
+<dt>
+Scale (Gaussian Sampling): same as point sampling except a weighted average of the pixel in the original image and its neighbors was used.
+<dt>
+Scale (Bilinear Interpolation): also same as point sampling except a bilinear interpolation between a non-integer point in the original image and the pixels surrounding it was used.
+<p>
+<dt>
+Rotate (Point Sampling): set each pixel in a temporary image to its counterpart in the original image rotated by a given angle. 
+<dt>
+Rotate (Gaussian Sampling): same as point sampling but set each pixel in the temporary image to a weighted average from the original image.
+<dt>
+Rotate (Bilinear Interpolation): same as point sampling but set each pixel in the temporary image to a bilinear interpolation between a non-integer point in the original image and the points surrounding it.
+<p>
+<dt>
+Fun Swirl (Point Sampling): Set each pixel in the target image to its counterpart in the original image rotated by an angle determined by its distance from the origin-- the farter away the pixel from the origin, the more rotation it was given.
+<dt>
+Fun Swirl (Gaussian Sampling): same as point sampling except a weighted average was used.
+<dt>
+Fun Swirl (Bilinear Interpolation): Same as point sampling but a bilinear interpolation between a non-integer coordinate and ites neighbors was used.
+<p>
+Quantize: subdivided the [0-1] interval into nbits discrete values and snapped pixel colors to these discrete values.
+<p>
+Random Dither: added random noise to the source image before quantizing. Amount of noise added was proportional to 1/nbits. Setting the noise to this seemed to yield good results.
+<p>
+Ordered Dither: applied a 4x4 Bayer's pattern matrix to the image before quantizing.
+<p>
+Floyd-Steinberg Dither: diffused quantization error by calculating it and spreading it to neighboring pixels using the Floyd-Steinberg error diffusion pattern.
+<p>
+Composite: used the over operation discussed in class on each pixel.
+<p>
+Morph: First interpolated between the source segments and the target segments using the time step and then applied the Beier morphing algorithm to produce a new source image. Then interpolated between the target segments and the source segments (the other way) using the time step and used Beier's morphing algorithm to produce a new destination image. Then layered the new source and destination images on top of one another using an over operation with alpha = time step (cross-fade).
+
+
+<br><hr></br>
+
+
+<br><hr><br>
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+
+particle_gravity 0 -1 0
+
+sphere -1 0 -5 0 1
+particle 0 0 0
+0 -1 0
+1 0 0 1 0 -1
+
+
+#    position_x position_y position_z 
+ #   velocity_x velocity_y velocity_z 
+  #  mass fixed drag elasticity lifetime mat_id

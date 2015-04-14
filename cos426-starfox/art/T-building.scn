@@ -1,0 +1,25 @@
+material
+ 1 1 1
+ 0.5 0.5 0.5
+ 0.5 0.5 0.5	
+ 0 0 0
+ 0 0 0 
+ 0 1 ../GlutTest/images/window.bmp
+
+begin 0
+  1 0 0 0 
+  0 0 1 0 
+  0 -1 0 10
+  0 0 0 1
+  cylinder
+  -1
+  0 0 0 
+  2 20
+end
+
+box 
+ 0
+ -5 -5 20
+ 5 5 22
+
+
