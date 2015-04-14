@@ -40,8 +40,8 @@ Assignment 4:
  
  
 Final project:
- - A fully-functional video game like Starfox that allows for networked multiplayer.
-
-   [Full web page](http://cdn.rawgit.com/iamnotnader/computer_graphics/master/FINAL_PROJECT/trunk/writeup.html)
+ - A fully-functional video game like Starfox that allows for networked multiplayer. [Full web page](http://cdn.rawgit.com/iamnotnader/computer_graphics/master/FINAL_PROJECT/trunk/writeup.html)
+ 
+![alt text](http://cdn.rawgit.com/iamnotnader/computer_graphics/master/FINAL_PROJECT/trunk/output/network2.png)
 
 
