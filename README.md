@@ -1,7 +1,6 @@
 The assignments for COS426 at Princeton 2011. Every assignment contains an
 HTML file within that details what it does.
 
-This is widely regarded as one of the most difficult courses at Princeton.
 I took it my freshman Spring so this code is a little old. See here for all
 the assignment specs:
 http://www.cs.princeton.edu/courses/archive/spr12/cos426/assignments.html
