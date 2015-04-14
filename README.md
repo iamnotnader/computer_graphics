@@ -24,6 +24,7 @@ Assignment 1:
 Assignment 2:
  - Full mesh processing toolkit with everything from bilateral smoothing to
    Catmull-Clark subdivision.
+
    [Full web page](http://cdn.rawgit.com/iamnotnader/computer_graphics/master/nbal_cos426_assignment2%202/writeup.html)
 
 
@@ -35,11 +36,13 @@ Assignment 3:
 
 Assignment 4:
  - A particle system with features like flocking.
+
    [Full web page](http://cdn.rawgit.com/iamnotnader/computer_graphics/master/nbal_cos426_assignment4/writeup.html)
  
  
 Final project:
  - A fully-functional video game like Starfox that allows for networked multiplayer.
+
    [Full web page](http://cdn.rawgit.com/iamnotnader/computer_graphics/master/FINAL_PROJECT/trunk/writeup.html)
 
 
