@@ -24,22 +24,22 @@ Assignment 1:
 Assignment 2:
  - Full mesh processing toolkit with everything from bilateral smoothing to
    Catmull-Clark subdivision.
-   http://cdn.rawgit.com/iamnotnader/computer_graphics/master/nbal_cos426_assignment2%202/writeup.html
+   [Full web page](http://cdn.rawgit.com/iamnotnader/computer_graphics/master/nbal_cos426_assignment2%202/writeup.html)
 
 
 Assignment 3:
  - Fully-functional ray-tracer with support for all kinds of simple shapes and
    meshes, and some fairly sophisticated features.
-   http://cdn.rawgit.com/iamnotnader/computer_graphics/master/nbal_cos426_assignment3/writeup2.html
+   [Full web page](http://cdn.rawgit.com/iamnotnader/computer_graphics/master/nbal_cos426_assignment3/writeup2.html)
 
 
 Assignment 4:
  - A particle system with features like flocking.
-   http://cdn.rawgit.com/iamnotnader/computer_graphics/master/nbal_cos426_assignment4/writeup.html
+   [Full web page](http://cdn.rawgit.com/iamnotnader/computer_graphics/master/nbal_cos426_assignment4/writeup.html)
  
  
 Final project:
  - A fully-functional video game like Starfox that allows for networked multiplayer.
-   http://cdn.rawgit.com/iamnotnader/computer_graphics/master/FINAL_PROJECT/trunk/writeup.html
+   [Full web page](http://cdn.rawgit.com/iamnotnader/computer_graphics/master/FINAL_PROJECT/trunk/writeup.html)
 
 
