@@ -14,9 +14,7 @@ Assignment 0:
   
 Assignment 1:
  - Full image processing toolkit with everything from Gaussian blur to morphing.
-   I morph the professor into Homer Simpson.
-
-   [Full web page](http://cdn.rawgit.com//iamnotnader/computer_graphics/master/nbal_cos426_assignment1/writeup.html)
+   I morph the professor into Homer Simpson. [Full web page](http://cdn.rawgit.com//iamnotnader/computer_graphics/master/nbal_cos426_assignment1/writeup.html)
 
    ![alt text](http://cdn.rawgit.com//iamnotnader/computer_graphics/master/nbal_cos426_assignment1/art/Szymon%20Simpson.gif)
 
